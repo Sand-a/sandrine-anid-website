@@ -1,0 +1,53 @@
+.hero-section {
+  min-height: 70vh;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 2.4rem;
+}
+
+.designer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 1rem;
+  grid-column: 1 / 6;
+  grid-row: 1/2;
+}
+.designer-box svg {
+  margin-left: 5%;
+  width: 70%;
+  margin-top: -50%;
+}
+.bodytext {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+}
+.text-intro {
+  margin: 0 10%;
+}
+
+.text-intro-2 {
+  font-weight: 600;
+}
+.image-box {
+  grid-column: 5 / 12;
+  grid-row: 1/2;
+  width: 100%;
+  align-self: center;
+}
+.image-box img {
+  height: 60vh;
+}
+.developer-box {
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+  grid-column: 8 / 13;
+  grid-row: 1/2;
+}
+.developer-box svg {
+  margin-top: -80%;
+  margin-left: 20%;
+  width: 70%;
+}

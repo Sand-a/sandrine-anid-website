@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+/* font */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* color schema */
+:root {
+  --family-font: "Montserrat", sans-serif;
+  --nav-links: #fff;
+  --nav-links-active: #ffe53b;
+  --nav-links-hover: #ffe53b;
+
+  --white: #fff;
+  --yellow: #ffe53b;
+
+  --line-color: #b3a597;
+  --text-color: #525252;
+  --text--bg: rgba(0, 0, 0, 0.65);
+  --light-grey: rgb(168, 166, 163);
+  --light-bg: #f1f1f1;
+  --image-darker: rgba(0, 0, 0, 0.5);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  /* outline: 1px solid black; */
+  outline: none;
+}
+html {
+  font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  font-family: var(--family-font);
+
+  font-weight: 400;
+
+  line-height: 1;
+  color: black;
+
+  display: block;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+/* general */
+.grid {
+  display: grid;
+}
+.grid__col_2 {
+  grid-template-columns: 1fr 1fr;
+}
+.grid__col_5 {
+  grid-template-columns: repeat(5, 1fr);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* #up-arrow {
+  animation: toUp 1s infinite;
+}
+@keyframes toUp {
+  0% {
+    transform: rotate(0%);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  50% {
+    transform: rotate(6deg);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: rotate(0%);
   }
-}
+} */

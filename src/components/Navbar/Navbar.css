@@ -1,0 +1,131 @@
+.header {
+  position: sticky;
+  margin: 0;
+
+  top: 0;
+
+  width: 100vw;
+
+  opacity: 0.9;
+
+  background-color: rgb(0, 0, 0);
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 9rem;
+  padding: 0 3rem;
+}
+
+.navbar-logos {
+  display: flex;
+  align-items: center;
+}
+.logo-icon {
+  height: 4.5rem;
+  width: 4.5rem;
+  margin-right: 3rem;
+}
+.logo-name {
+  height: 3rem;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+.nav-items a {
+  white-space: nowrap;
+  height: 100%;
+  font-size: 1.8rem;
+  letter-spacing: 0.063em;
+
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  text-decoration: none;
+
+  color: var(--nav-links);
+  text-align: center;
+
+  border-style: solid;
+  border-width: 0px 0px 0.05px 0px;
+  border-color: transparent;
+  font-family: var(--font-text);
+
+  transition: all 200ms;
+}
+
+.nav-items a:hover {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--nav-links-active);
+}
+.nav-items a.active {
+  padding-bottom: 0.5rem;
+  border-bottom: 5px solid var(--nav-links-active);
+}
+.menu-btn {
+  display: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+/* mobile menu navbar */
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    padding: 0 4rem;
+  }
+  .logo-icon {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .hamburger {
+    width: 3.5rem;
+    transition: all 1s ease-in-out;
+  }
+
+  .logo-name {
+    height: 2rem;
+  }
+  .header {
+    height: 8rem;
+    opacity: 1;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 8rem 0 15rem 4rem;
+    background-color: var(--yellow);
+
+    position: absolute;
+    top: 9rem;
+    left: 1rem;
+    right: 0;
+    transform: translateX(100%);
+    border-radius: 2rem;
+    z-index: 90;
+    /* user-select: none; */
+    transition: all 0.5s ease-in-out;
+  }
+  .active {
+    transform: translateX(0);
+    right: 1rem;
+  }
+  .nav-items a {
+    color: black;
+  }
+  .nav-items a.active {
+    border-color: black;
+  }
+}
+@media screen and (max-width: 960px) {
+}
