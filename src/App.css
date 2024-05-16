@@ -60,28 +60,22 @@ body {
   max-width: 120rem;
   margin: 0 auto;
 }
+.bodytext {
+  white-space: pre-line;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+}
 /* general */
 .grid {
   display: grid;
 }
-.grid__col_2 {
-  grid-template-columns: 1fr 1fr;
-}
-.grid__col_5 {
-  grid-template-columns: repeat(5, 1fr);
-}
 
-/* #up-arrow {
-  animation: toUp 1s infinite;
+.primary-headline {
+  text-transform: uppercase;
+  font-weight: 00;
+  text-align: center;
+  font-size: 3.5rem;
+  letter-spacing: -1px;
+  margin-bottom: 10rem;
 }
-@keyframes toUp {
-  0% {
-    transform: rotate(0%);
-  }
-  50% {
-    transform: rotate(6deg);
-  }
-  100% {
-    transform: rotate(0%);
-  }
-} */

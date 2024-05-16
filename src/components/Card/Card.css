@@ -1,0 +1,26 @@
+.card-container {
+  width: 100%;
+  padding: 5.5rem 5rem 4rem 5rem;
+
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 0 2rem;
+  box-shadow: -0.8rem 0 var(--yellow);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title h1 {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+.card-slogan {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.card-text {
+  margin-bottom: 2rem;
+}
+.card-skills {
+  font-size: 1.8rem;
+}

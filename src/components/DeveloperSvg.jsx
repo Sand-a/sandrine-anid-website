@@ -43,21 +43,7 @@ const DeveloperSvg = (props) => (
       />
       <path d="M35.3 89.8H16.8L2.6 57.3c-.3-.6-.4-1.2-.4-1.8 0-.7.1-1.3.4-1.9L16 23.8c.7-1.6 2.3-2.6 4-2.6h15.2L19.8 54.6c-.1.3-.2.6-.2 1 0 .3.1.7.2 1l15.5 33.2zm3.4 2.2-17-36.5 17-36.5H20.1c-2.6 0-4.9 1.5-6 3.9L.6 52.6c-.4.9-.6 1.9-.6 2.8s.2 1.9.6 2.7L15.4 92h23.3z" />
     </g>
-    <motion.g
-      id="right-arrow"
-      variants={arrow}
-      // whileHover={{ x: [-200, 0] }}
-      // transition={{
-      //   times: [0, 1],
-
-      //   duration: 5,
-
-      //   repeat: Infinity,
-
-      //   type: "keyframes",
-      //   ease: "easeInOut",
-      // }}
-    >
+    <motion.g id="right-arrow" variants={arrow}>
       <path
         d="M446.6 56.6c0 .7-.1 1.3-.4 1.9l-13.5 29.7c-.7 1.6-2.3 2.6-4 2.6h-15.2L429 57.5c.1-.3.2-.6.2-1 0-.3-.1-.7-.2-1l-15.6-33.4h18.5l14.2 32.5c.3.7.5 1.3.5 2z"
         className="st0"

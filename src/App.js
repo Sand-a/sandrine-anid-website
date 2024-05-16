@@ -5,6 +5,7 @@ import Projects from "./components/Projects/Projects";
 
 import WhatIDo from "./components/WhatIDo/WhatIDo";
 import { menuData } from "./components/data/menuData";
+import { cardsData } from "./components/data/cardsData";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Navbar menuData={menuData} />
       <HeroSection />
 
-      <WhatIDo />
+      <WhatIDo cardsData={cardsData} />
       <Projects />
     </div>
   );
