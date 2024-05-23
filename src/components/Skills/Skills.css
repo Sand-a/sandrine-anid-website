@@ -1,0 +1,52 @@
+.skills-section {
+}
+
+.skills-headline {
+  position: relative;
+}
+@keyframes skills-floating {
+  0% {
+    transform: translate(-70%, 20%);
+  }
+  50% {
+    transform: translate(-75%, 10%);
+  }
+  100% {
+    transform: translate(-70%, 20%);
+  }
+}
+.skills-headline::before {
+  content: "";
+  background-image: url("/public/assets/icons/cloud-icon.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  transform: translate(-65%, 10%);
+  height: 1.8em;
+  width: 1.8em;
+  animation: skills-floating 5s ease-in 1s infinite;
+}
+.skills-title {
+  display: flex;
+  justify-content: center;
+}
+.eye-icon {
+  height: 7rem;
+  position: absolute;
+  right: -45%;
+  top: -150%;
+  background-color: var(--yellow);
+  padding: 1rem;
+  border-radius: 50%;
+}
+.skills-btn-wrape {
+  padding: 0 2rem;
+}
+.skills-btn {
+  background-color: var(--yellow);
+
+  border-radius: 10rem;
+}
+.skills-btn:hover {
+  box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.275);
+}

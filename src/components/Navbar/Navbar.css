@@ -102,6 +102,7 @@
   .nav-list {
     display: flex;
     flex-direction: column;
+
     gap: 3rem;
     padding: 8rem 0 15rem 4rem;
     background-color: var(--yellow);

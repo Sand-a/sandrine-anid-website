@@ -9,10 +9,17 @@
   display: flex;
   flex-direction: column;
 }
-
+.card-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.card-title img {
+  height: 5rem;
+}
 .card-title h1 {
   font-size: 3rem;
-  margin-bottom: 5rem;
+  margin-left: 2rem;
 }
 .card-slogan {
   font-size: 2rem;

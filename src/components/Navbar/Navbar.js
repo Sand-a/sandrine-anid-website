@@ -21,11 +21,6 @@ const Navbar = ({ menuData }) => {
       <div className="header">
         <nav className="navbar container">
           <LinkS to="hero" offset={-90} smooth={true} className="navbar-logos">
-            {/* <img
-              className="logo-icon"
-              src="/assets/logo/s-logo-white.svg"
-              alt=""
-            /> */}
             <div className="logo-icon">
               <SLogoSvg />
             </div>

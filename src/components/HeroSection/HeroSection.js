@@ -23,12 +23,12 @@ const HeroSection = () => {
             transition={{ delay: 0.5, duration: 2, ease: "easeInOut" }}
           >
             <p className="bodytext text-intro text-intro-1">
-              Hello , i'm Sandrine, based in London
+              Hey, I'm Sandrine from London
             </p>
 
             <p className="bodytext text-intro text-intro-2">
               I will design & develop a website that you and your audience will
-              love!
+              love !
             </p>
 
             <div className="btn-box">
@@ -59,7 +59,7 @@ const HeroSection = () => {
                 }}
                 className="btn btn-cta"
               >
-                My work
+                My Projects
               </motion.button>
             </div>
           </motion.div>

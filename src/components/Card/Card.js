@@ -5,6 +5,7 @@ const Card = ({ card }) => {
   return (
     <div className="card-container">
       <div className="card-title">
+        <img src={card.icon} alt="" />
         <h1>{card.title}</h1>
       </div>
       <div className="card-text">

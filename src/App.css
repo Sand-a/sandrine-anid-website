@@ -47,6 +47,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-y: auto;
+
   font-family: var(--family-font);
 
   font-weight: 400;
@@ -70,6 +71,14 @@ body {
 .grid {
   display: grid;
 }
+.grid--col-2 {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.grid--col-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
 
 .primary-headline {
   text-transform: uppercase;
@@ -77,5 +86,11 @@ body {
   text-align: center;
   font-size: 3.5rem;
   letter-spacing: -1px;
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
+}
+.section {
+  padding: 18rem 0;
+}
+
+@media screen and (max-width: 1200px) {
 }
