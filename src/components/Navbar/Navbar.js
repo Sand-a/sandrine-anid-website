@@ -7,6 +7,7 @@ import SLogoSvg from "../SLogoSvg";
 
 const Navbar = ({ menuData }) => {
   const [menuClicked, setMenuClicked] = useState(false);
+
   const menuOpen = () => {
     setMenuClicked(true);
     document.body.style.overflow = "hidden";
@@ -19,7 +20,7 @@ const Navbar = ({ menuData }) => {
   return (
     <>
       <div className="header">
-        <nav className="navbar container">
+        <div className="navbar container">
           <LinkS to="hero" offset={-90} smooth={true} className="navbar-logos">
             <div className="logo-icon">
               <SLogoSvg />
@@ -27,44 +28,47 @@ const Navbar = ({ menuData }) => {
 
             <img className="logo-name" src="/assets/logo/logo.svg" alt="" />
           </LinkS>
-          <ul className={menuClicked ? "nav-list active" : "nav-list"}>
-            {menuData.map((item) => {
-              return (
-                <>
-                  <li key={item._id} className="nav-items">
-                    <LinkS
-                      activeclassname="active"
-                      to={item.to}
-                      spy={true}
-                      smooth={true}
-                      offset={-90}
-                      duration={500}
-                    >
-                      {item.name}
-                    </LinkS>
-                  </li>
-                </>
-              );
-            })}
-          </ul>
+          <nav className={menuClicked ? "nav-menu active" : "nav-menu"}>
+            <ul className="nav-list">
+              {menuData.map((item) => {
+                return (
+                  <>
+                    <li key={item._id} className="nav-items">
+                      <LinkS
+                        onClick={menuClose}
+                        activeclassname="active"
+                        to={item.to}
+                        spy={true}
+                        smooth={true}
+                        offset={-80}
+                        duration={500}
+                      >
+                        {item.name}
+                      </LinkS>
+                    </li>
+                  </>
+                );
+              })}
+            </ul>
+          </nav>
           {menuClicked ? (
-            <motion.button onClick={menuClose} className="menu-btn">
+            <button onClick={menuClose} className="menu-btn">
               <img
                 className="hamburger hamburger--close"
                 src="/assets/menu_icons/menu-close.svg"
                 alt=""
               />
-            </motion.button>
+            </button>
           ) : (
-            <motion.button onClick={menuOpen} className="menu-btn">
+            <button onClick={menuOpen} className="menu-btn">
               <img
                 className="hamburger hamburger--open"
                 src="/assets/menu_icons/menu-open.svg"
                 alt=""
               />
-            </motion.button>
+            </button>
           )}
-        </nav>
+        </div>
       </div>
     </>
   );
