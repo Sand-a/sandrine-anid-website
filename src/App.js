@@ -22,7 +22,7 @@ function App() {
       <Skills skillsData={skillsData} />
       <Projects projectsData={projectsData} />
       <Contact />
-      <Footer />
+      <Footer menuData={menuData} />
     </div>
   );
 }

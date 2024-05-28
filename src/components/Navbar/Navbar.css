@@ -76,7 +76,7 @@
 
 /* mobile menu navbar */
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 975px) {
   .menu-btn {
     display: block;
   }

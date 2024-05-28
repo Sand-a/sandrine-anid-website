@@ -1,16 +1,86 @@
 import React from "react";
+import { Link as LinkS } from "react-scroll";
 import "./Footer.css";
 
-const Footer = () => {
+const Footer = ({ menuData }) => {
   return (
     <>
       <footer className="footer-section">
-        <div className="container">
-          <img
-            className="logo-black"
-            src="/assets/logo/s-logo-black.svg"
-            alt=""
-          />
+        <div className=" footer-container ">
+          <div className="container footer-text-warp">
+            <div className="footer-links">
+              <LinkS to="hero" offset={-90} smooth={true}>
+                {" "}
+                <img
+                  className="logo-icon-black"
+                  src="/assets/logo/s-logo-black.svg"
+                  alt=""
+                />
+                <img
+                  className="logo-footer-name"
+                  src="/assets/logo/logo.svg"
+                  alt=""
+                />
+              </LinkS>
+
+              <div className="social-media-links">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/sandrine-anid-7a51282a1"
+                  className="social-media-icon"
+                >
+                  <img
+                    src="/assets/social_media_icons/linkedin-icon.svg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.instagram.com/myveryfirst_bc?igsh=aTZ4dHBzaDFzNzgx"
+                  className="social-media-icon"
+                >
+                  <img
+                    src="/assets/social_media_icons/instagram-icon.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="footer-contact">
+              <a href="mailto:hello@sandrineanid.com">
+                <img src="/assets/icons/email-icon.svg" alt="" />
+              </a>
+              <div className="contact-footer-links">
+                <a href="mailto:hello@sandrineanid.com" className="bodytext">
+                  hello@sandrineanid.com
+                </a>
+                <a href="tel:+447747483520" className="bodytext">
+                  0044 77 4748 3520
+                </a>
+              </div>
+              <a href="tel:+447747483520">
+                <img src="/assets/icons/phone-icon.svg" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div className="footer-signature">
+            <p className="bodytext">
+              <b>&copy;</b>
+              <span className="year"> {new Date().getFullYear()} </span> Design
+              & Developed by{" "}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/sandrine-anid-7a51282a1"
+                className="sand-signature"
+              >
+                <b>Sandrine Anid</b>
+              </a>
+            </p>
+          </div>
         </div>
       </footer>
     </>

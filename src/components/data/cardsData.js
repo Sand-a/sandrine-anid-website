@@ -1,5 +1,6 @@
 export const cardsData = [
   {
+    id: "ui-ux-design",
     icon: "assets/logo/s-logo-black.svg",
     title: "UI | UX design.",
     slogan: "Image is Everything.",
@@ -7,6 +8,7 @@ export const cardsData = [
     skills: "Figma, Illustrator & Photoshop.",
   },
   {
+    id: "front-end-development",
     icon: "assets/logo/s-logo-black-flip.svg",
     title: "Frontend Development.",
     slogan: "Optimization & Performance are Keys.",

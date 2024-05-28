@@ -15,7 +15,7 @@
   --line-color: #b3a597;
   --text-color: #525252;
   --text--bg: rgba(0, 0, 0, 0.65);
-  --light-grey: rgb(168, 166, 163);
+  --light-grey: #e9e9e9;
   --light-bg: #f1f1f1;
   --image-darker: rgba(0, 0, 0, 0.5);
 }
@@ -39,6 +39,7 @@ ul {
   /* outline: 1px solid black; */
   outline: none;
 }
+
 html {
   font-size: 62.5%;
 }
@@ -64,7 +65,7 @@ body {
 }
 .bodytext {
   white-space: pre-line;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   letter-spacing: 0.2px;
 }
@@ -83,7 +84,6 @@ body {
 
 .primary-headline {
   text-transform: uppercase;
-  font-weight: 00;
   text-align: center;
   font-size: 3.5rem;
   letter-spacing: -1px;
@@ -92,8 +92,20 @@ body {
 .section {
   padding: 18rem 0;
 }
-@media screen and (max-width: 1200px) {
-  .container {
-    overflow-x: hidden;
+@media screen and (max-width: 975px) {
+  .grid--col-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--col-2 {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 650px) {
+  .grid--col-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .primary-headline {
+    font-size: 3rem;
   }
 }

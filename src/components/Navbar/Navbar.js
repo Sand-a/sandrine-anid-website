@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link as LinkS } from "react-scroll";
-import { motion } from "framer-motion";
 
 import "./Navbar.css";
 import SLogoSvg from "../SLogoSvg";
