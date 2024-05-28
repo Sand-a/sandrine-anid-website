@@ -42,7 +42,6 @@
 /* designer section */
 .designer-box {
   align-self: start;
-
   grid-column: 1 / 6;
   grid-row: 3 / 4;
 }
@@ -200,19 +199,29 @@
     width: 30rem;
   }
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 550px) {
   .design-dev-title {
     width: 105%;
     padding-left: 1rem;
   }
+
   .text-intro {
+    margin: 0 5%;
     margin-bottom: 2rem;
-    width: 100%;
+    width: 110%;
   }
   .image-box img {
     margin-left: -10%;
   }
+  .btn-box {
+    margin: 0 5%;
+  }
   .btn-box a {
     width: 25rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .image-box img {
+    margin-left: -25%;
   }
 }

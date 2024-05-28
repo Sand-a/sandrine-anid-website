@@ -105,9 +105,10 @@
     top: 9rem;
     left: 100%;
     right: 1rem;
+
     background-color: var(--yellow);
     border-radius: 1rem;
-    transition: 850ms;
+    transition: 350ms;
   }
   .nav-list {
     display: flex;
@@ -129,9 +130,11 @@
   }
 }
 @media screen and (max-width: 570px) {
+  .nav-menu {
+    bottom: 1rem;
+  }
   .nav-menu.active {
     left: 1rem;
-    bottom: 10rem;
   }
   .navbar {
     padding: 0 2rem;

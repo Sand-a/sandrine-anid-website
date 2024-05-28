@@ -3,9 +3,8 @@ export const skillsData = [
   "Art Direction",
   "Illustrations",
   "Graphic Design",
-  "SVG: Icons & Animations",
+  "SVG: icons & animations",
   "Figma / Prototype",
   "HTML / CSS",
-  "JavaScript",
-  "React JS",
+  "JavaScript / React.js",
 ];
