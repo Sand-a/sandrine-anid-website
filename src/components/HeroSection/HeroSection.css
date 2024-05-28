@@ -141,7 +141,7 @@
   .svg-link-dev svg {
     margin-top: -3%;
     margin-left: 18%;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
   }
 
   .designer-box {
@@ -190,7 +190,7 @@
     grid-column: 1 / 4;
   }
   .image-box img {
-    margin-left: -10%;
+    margin-left: -5%;
   }
   .text-intro {
     margin-bottom: 2rem;
@@ -202,6 +202,7 @@
 }
 @media screen and (max-width: 570px) {
   .design-dev-title {
+    width: 105%;
     padding-left: 1rem;
   }
   .text-intro {
@@ -209,7 +210,7 @@
     width: 100%;
   }
   .image-box img {
-    margin-left: -20%;
+    margin-left: -10%;
   }
   .btn-box a {
     width: 25rem;

@@ -128,3 +128,12 @@
     border-color: black;
   }
 }
+@media screen and (max-width: 570px) {
+  .nav-menu.active {
+    left: 1rem;
+    bottom: 10rem;
+  }
+  .navbar {
+    padding: 0 2rem;
+  }
+}

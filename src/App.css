@@ -101,11 +101,15 @@ body {
   }
 }
 @media screen and (max-width: 650px) {
+  .section {
+    padding: 8rem 0;
+  }
   .grid--col-3 {
     grid-template-columns: 1fr;
   }
 
   .primary-headline {
     font-size: 3rem;
+    margin-bottom: 8rem;
   }
 }

@@ -42,9 +42,13 @@
 .skills-btn {
   width: 100%;
   justify-self: center;
-  background-color: var(--yellow);
+  background-color: var(--light-grey);
+
+  border: 1px solid black;
+  border-radius: 0 2rem;
+  box-shadow: -0.8rem 0 var(--yellow);
   cursor: auto;
-  border-radius: 10rem;
+  padding: 1rem;
 }
 @media screen and (max-width: 975px) {
   .skills-btn-wrape {
