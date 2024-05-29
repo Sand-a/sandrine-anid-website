@@ -27,13 +27,13 @@
   gap: 3rem;
 }
 .social-media-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   margin-bottom: 0.5rem;
 }
 .social-media-links {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 .footer-signature {
   background-color: var(--yellow);

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Projects.css";
+import "../Card/Card.css";
 
 const swipe = {
   initial: { x: -10, zIndex: 1 },
@@ -22,13 +23,13 @@ const Projects = ({ projectsData }) => {
                   className="project-views"
                 >
                   <div className="project-container project-desktop-container">
-                    <img src="/assets/projects/aa-website.jpg" alt="" />
+                    <img src={project.desktop} alt="" />
                   </div>
                   <motion.div
                     variants={swipe}
                     className="project-container project-phone-container"
                   >
-                    <img src="/assets/projects/aa-website-ph.jpg" alt="" />
+                    <img src={project.phone} alt="" />
                   </motion.div>
                 </motion.div>
                 <div className="project-text">
@@ -38,18 +39,26 @@ const Projects = ({ projectsData }) => {
                       src="/assets/icons/arrow-right.svg"
                       alt=""
                     />
-                    <h1> Web Design & Development</h1>
+                    <h1 className="card-slogan"> {project.project_name}</h1>
                   </div>
 
                   <p className="bodytext">
-                    <b>UI | UX design:</b> Art direction / logo design /image
-                    refinement
+                    <b className="card-skills">UI | UX design:</b>including{" "}
+                    {project.design}
                   </p>
-                  <p className="bodytext">
-                    <b>Front-end dev:</b> CSS React.js
+                  <p className="bodytext ">
+                    <b className="card-skills">Developement tools:</b>
+                    {project.coding}
                   </p>
 
-                  <button className="btn">Visit Website</button>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={project.url}
+                    className="btn form-btn"
+                  >
+                    Visit Website
+                  </a>
                 </div>
               </div>
             );

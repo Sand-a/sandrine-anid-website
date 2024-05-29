@@ -42,8 +42,8 @@
 .skills-btn {
   width: 100%;
   justify-self: center;
-  background-color: var(--light-grey);
-
+  /* background-color: var(--light-grey); */
+  background-color: transparent;
   border: 1px solid black;
   border-radius: 0 2rem;
   box-shadow: -0.8rem 0 var(--yellow);
