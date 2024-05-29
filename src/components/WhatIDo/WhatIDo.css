@@ -5,6 +5,7 @@
 }
 .what-i-do-headline {
   position: relative;
+  margin-top: -3rem;
 }
 @keyframes floating {
   0% {

@@ -69,20 +69,20 @@ const HeroSection = () => {
 
           <div className="btn-box">
             <LinkS
-              to="contact"
-              offset={-90}
-              smooth={true}
-              className="btn btn-cta"
-            >
-              Let’s work together
-            </LinkS>
-            <LinkS
               to="projects"
               offset={-90}
               smooth={true}
               className="btn btn-cta"
             >
               My Projects
+            </LinkS>
+            <LinkS
+              to="contact"
+              offset={-90}
+              smooth={true}
+              className="btn btn-cta"
+            >
+              Let’s work together
             </LinkS>
           </div>
         </motion.div>

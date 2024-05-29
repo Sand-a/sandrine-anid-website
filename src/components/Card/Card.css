@@ -15,7 +15,7 @@
   margin-bottom: 5rem;
 }
 .card-title img {
-  height: 5rem;
+  height: 4rem;
 }
 .card-title h1 {
   font-size: 3rem;
@@ -47,5 +47,8 @@
   }
   .card-skills {
     font-size: 1.6rem;
+  }
+  .card-title {
+    margin-bottom: 3rem;
   }
 }

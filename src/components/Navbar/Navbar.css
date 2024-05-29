@@ -93,7 +93,7 @@
     transition: all 1s ease-in-out;
   }
   .logo-name {
-    height: 2rem;
+    height: 2.5rem;
   }
   .header {
     height: 8rem;
@@ -132,6 +132,7 @@
 @media screen and (max-width: 570px) {
   .nav-menu {
     bottom: 1rem;
+    border-radius: 1rem 1rem 5rem 5rem;
   }
   .nav-menu.active {
     left: 1rem;
