@@ -38,10 +38,25 @@
   gap: 2rem;
   padding: 2.5rem;
 }
-input::placeholder {
+.contact-form input,
+.contact-form textarea {
+  font-size: 1.6rem;
+  background-color: var(--light-grey);
+  border: 1.5px solid var(--light-grey);
+}
+.contact-form input:hover,
+.contact-form textarea:hover {
+  background-color: #fff;
+  border: 1.5px solid black;
+}
+input[type="text"]:focus {
+  border: 1.5px solid black;
+}
+input::placeholder,
+textarea::placeholder {
   color: #22222247;
   letter-spacing: 1px;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .form-group {
