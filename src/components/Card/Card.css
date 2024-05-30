@@ -12,13 +12,13 @@
 .card-title {
   display: flex;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 .card-title img {
   height: 4rem;
 }
 .card-title h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-left: 2rem;
 }
 .card-slogan {
@@ -34,8 +34,8 @@
   font-size: 1.8rem;
 }
 @media screen and (max-width: 975px) {
-  .card-title h1 {
-    font-size: 2.5rem;
+  .card-title {
+    margin-bottom: 3.5rem;
   }
 }
 @media screen and (max-width: 650px) {
@@ -47,8 +47,5 @@
   }
   .card-skills {
     font-size: 1.6rem;
-  }
-  .card-title {
-    margin-bottom: 3rem;
   }
 }
