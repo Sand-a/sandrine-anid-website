@@ -52,7 +52,7 @@ body {
   font-family: var(--family-font);
 
   font-weight: 400;
-
+  touch-action: none;
   line-height: 1;
   color: black;
 

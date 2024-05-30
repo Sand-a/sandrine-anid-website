@@ -113,8 +113,11 @@
   .nav-list {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4.5rem;
     padding: 8rem 0 15rem 4rem;
+  }
+  .nav-items a {
+    font-size: 2rem;
   }
 
   .nav-menu.active {

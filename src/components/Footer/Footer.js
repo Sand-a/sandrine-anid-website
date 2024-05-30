@@ -30,10 +30,7 @@ const Footer = ({ menuData }) => {
                   href="https://www.linkedin.com/in/sandrine-anid-7a51282a1"
                   className="social-media-icon"
                 >
-                  <img
-                    src="/assets/social_media_icons/linkedin-icon.svg"
-                    alt=""
-                  />
+                  <img src="/assets/icons/linkedin-icon.svg" alt="" />
                 </a>
                 <a
                   target="_blank"
@@ -41,10 +38,7 @@ const Footer = ({ menuData }) => {
                   href="https://www.instagram.com/myveryfirst_bc?igsh=aTZ4dHBzaDFzNzgx"
                   className="social-media-icon"
                 >
-                  <img
-                    src="/assets/social_media_icons/instagram-icon.svg"
-                    alt=""
-                  />
+                  <img src="/assets/icons/instagram-icon.svg" alt="" />
                 </a>
               </div>
             </div>

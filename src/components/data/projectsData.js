@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     _id: 11,
-    project_name: "ANID | ALUCOBOND®",
+    project_name: "ALUCOBOND® Lebanon",
     url: "https://anidconstruction.com/",
     desktop: "/assets/projects/aa-website.jpg",
     phone: "/assets/projects/aa-website-ph.jpg",

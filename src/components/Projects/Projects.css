@@ -50,7 +50,7 @@
   border-radius: 0 0 1.5rem 1.5rem;
 }
 .project-desktop-container {
-  padding: 5rem 0.8rem 0.8rem 0.8rem;
+  padding: 4rem 0.8rem 0.8rem 0.8rem;
   width: 80%;
   z-index: 2;
 }
@@ -61,7 +61,7 @@
 .project-phone-container {
   position: absolute;
   right: 3rem;
-  padding: 4ch 0.5rem 0.5rem 0.5rem;
+  padding: 3rem 0.5rem 0.5rem 0.5rem;
   width: 23%;
 }
 .project-phone-container img {
@@ -71,13 +71,12 @@
 .project-text {
   display: flex;
   flex-direction: column;
-
   background-color: #fff;
   width: 93%;
   margin-top: -3rem;
   margin-bottom: 10rem;
   border-radius: 0 2rem;
-  padding: 7rem 4rem;
+  padding: 7rem 2rem;
 }
 .project-text div {
   display: flex;
@@ -96,6 +95,7 @@
 .arrow-right {
   height: 4rem;
   margin-bottom: 2rem;
+  padding: 0 0.5rem 0 2rem;
 }
 .project-text a {
   margin-left: 3rem;
@@ -111,5 +111,24 @@
   .projects-wrap {
     padding: 1rem 0 1rem 2rem;
     margin-right: -0.5rem;
+  }
+  .project-desktop-container {
+    z-index: 1;
+  }
+  .project-phone-container {
+    z-index: 3;
+  }
+  .project-desktop-container {
+    padding-top: 3rem;
+  }
+  .project-phone-container {
+    padding-top: 2rem;
+  }
+  .project-text {
+    padding-left: 0.5rem;
+    margin-bottom: 5rem;
+  }
+  .arrow-right {
+    padding-left: 1.5rem;
   }
 }
