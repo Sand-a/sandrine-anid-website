@@ -26,14 +26,15 @@
   align-items: center;
   gap: 3rem;
 }
-.social-media-icon {
-  width: 2rem;
-  height: 2rem;
-  margin-bottom: 0.5rem;
-}
+
 .social-media-links {
   display: flex;
   gap: 1rem;
+}
+.social-media-icon img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 .footer-signature {
   background-color: var(--yellow);
@@ -75,12 +76,16 @@
   }
 }
 @media screen and (max-width: 750px) {
+  .footer-links {
+    gap: 4rem;
+  }
   .footer-text-warp {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 3rem;
   }
+
   .footer-signature {
     margin-top: -3rem;
     padding: 16rem 1rem 5rem;

@@ -47,8 +47,8 @@ const Footer = ({ menuData }) => {
                 <img src="/assets/icons/email-icon.svg" alt="" />
               </a>
               <div className="contact-footer-links">
-                <a href="mailto:hello@sandrineanid.com" className="bodytext">
-                  hello@sandrineanid.com
+                <a href="mailto:sandrine.anid@gmail.com" className="bodytext">
+                  sandrine.anid@gmail.com
                 </a>
                 <a href="tel:+447747483520" className="bodytext">
                   0044 77 4748 3520
