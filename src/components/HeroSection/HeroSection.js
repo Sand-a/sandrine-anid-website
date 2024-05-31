@@ -12,8 +12,12 @@ const HeroSection = () => {
       <section id="hero" className="container hero-section grid ">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
+          whileInView={{
+            opacity: 1,
+            scale: 1,
+            transition: { delay: 0.2, duration: 1 },
+          }}
+          viewport={{ once: true, amount: 0.5 }}
           className="image-box"
         >
           <img src="/assets/sa-photo.png" alt="profile-pic" />
@@ -23,8 +27,12 @@ const HeroSection = () => {
           <div className="design-dev-title">
             <motion.div
               initial={{ x: -200, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 0.4, duration: 1, ease: "easeInOut" }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: { delay: 0.5, duration: 1 },
+              }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               <LinkS
                 to="ui-ux-design"
@@ -37,8 +45,12 @@ const HeroSection = () => {
             </motion.div>{" "}
             <motion.div
               initial={{ x: 200, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 0.4, duration: 1, ease: "easeInOut" }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: { delay: 0.5, duration: 1 },
+              }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               <LinkS
                 to="front-end-development"
@@ -54,9 +66,13 @@ const HeroSection = () => {
 
         <motion.div
           className="designer-box"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 2, ease: "easeInOut" }}
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { delay: 0.5, duration: 1 },
+          }}
+          viewport={{ once: true, amount: 0.5 }}
         >
           <p className="bodytext text-intro text-intro-1">
             Hey, I'm Sandrine from London
