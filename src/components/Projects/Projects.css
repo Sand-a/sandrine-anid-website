@@ -18,7 +18,7 @@
 .projects-headline::after {
   content: "";
   position: absolute;
-  top: -200%;
+  top: -130%;
   margin-left: 1rem;
 
   background-image: url("/public/assets/icons/foudre.svg");
@@ -103,7 +103,7 @@
 
 @media screen and (max-width: 650px) {
   .projects-headline::after {
-    top: -180%;
+    top: -100%;
     margin-left: 0.5rem;
     height: 2em;
     width: 2em;

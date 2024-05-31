@@ -1,6 +1,5 @@
 import React from "react";
 import "./WhatIDo.css";
-import { motion } from "framer-motion";
 import Card from "../Card/Card";
 
 const WhatIDo = ({ cardsData }) => {

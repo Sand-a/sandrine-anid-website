@@ -3,13 +3,13 @@
 }
 @keyframes skills-floating {
   0% {
-    transform: translate(-70%, 20%);
+    transform: translate(-70%, 30%);
   }
   50% {
-    transform: translate(-75%, 10%);
+    transform: translate(-75%, 20%);
   }
   100% {
-    transform: translate(-70%, 20%);
+    transform: translate(-70%, 30%);
   }
 }
 .skills-headline::before {
@@ -31,7 +31,7 @@
   height: 7rem;
   position: absolute;
   right: -45%;
-  top: -150%;
+  top: -100%;
   background-color: var(--yellow);
   padding: 1rem;
   border-radius: 50%;
