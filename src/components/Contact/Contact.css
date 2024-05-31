@@ -58,7 +58,9 @@ textarea::placeholder {
   letter-spacing: 1px;
   font-size: 1.6rem;
 }
-
+input[name="user_email"] {
+  text-transform: lowercase;
+}
 .form-group {
   display: flex;
   flex-direction: column;
