@@ -18,9 +18,8 @@ const HeroSection = () => {
       >
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          style={{ width: "100%" }}
+          whileInView={{ opacity: 1, scale: 1, transition: { duration: 1 } }}
+          viewport={{ once: true, amount: 0.5 }}
           className="image-box"
         >
           <img src="/assets/sa-photo.png" alt="profile-pic" />
