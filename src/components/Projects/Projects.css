@@ -101,7 +101,7 @@
 @media screen and (max-width: 650px) {
   .projects-headline::after {
     top: -100%;
-    margin-left: 0.5rem;
+    margin-left: 0;
     height: 2em;
     width: 2em;
   }

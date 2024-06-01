@@ -84,3 +84,8 @@ ul {
     margin-bottom: 8rem;
   }
 }
+@media screen and (max-width: 375px) {
+  .primary-headline {
+    font-size: 2.5rem;
+  }
+}

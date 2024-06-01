@@ -27,12 +27,14 @@ const Contact = () => {
   };
   return (
     <div id="contact" className="section section--4 container section-contact">
-      <h1 className="primary-headline contact-headline contact-headline-1">
-        Let’s get in Touch
-      </h1>
-      <h1 className="primary-headline contact-headline contact-headline-2">
-        Drop me a Line !
-      </h1>
+      <div className="contact-headline">
+        <h1 className="primary-headline contact-headline-1">
+          Let’s get in Touch
+        </h1>
+        <h1 className="primary-headline contact-headline contact-headline-2">
+          Drop me a Line !
+        </h1>
+      </div>
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <div className="form-group">
           <label for="name" className="bodytext">

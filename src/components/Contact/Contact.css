@@ -1,11 +1,16 @@
-.section-contact {
-  background-color: transparent;
-}
 .contact-headline {
-  text-align: start;
-  margin-bottom: 1rem;
-  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-bottom: 6rem;
+  margin-left: 5rem;
 }
+.contact-headline-1,
+.contact-headline-2 {
+  margin-bottom: 0;
+}
+
 .contact-headline-1:after {
   content: "";
   background-image: url("/public/assets/icons/pt-suspension.svg");
@@ -17,7 +22,8 @@
   width: 1.8em;
 }
 .contact-headline-2 {
-  padding-bottom: 6rem;
+  margin-left: 3rem;
+  position: relative;
 }
 .contact-headline-2:before {
   content: "";
@@ -25,6 +31,7 @@
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
+  left: 0;
   transform: translate(-65%, 10%);
   height: 1.8em;
   width: 1.8em;
@@ -33,7 +40,6 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-
   align-items: flex-start;
   gap: 2rem;
   padding: 2.5rem;
@@ -99,14 +105,24 @@ input[name="user_email"] {
   .searchfield {
     width: 100%;
   }
-  .contact-headline-1,
+  .contact-headline {
+    align-items: center;
+    margin-left: 0;
+  }
   .contact-headline-2 {
-    font-size: 2.8rem;
+    margin-left: 2rem;
   }
 }
 @media screen and (max-width: 570px) {
   .form-group {
     padding: 0 1rem;
+  }
+  .contact-headline {
+    margin-bottom: 2rem;
+  }
+  .contact-headline-1,
+  .contact-headline-2 {
+    font-size: 2.8rem;
   }
 }
 @media screen and (max-width: 400px) {
@@ -114,7 +130,14 @@ input[name="user_email"] {
   .contact-headline-2 {
     font-size: 2.5rem;
   }
+
   .form-group {
     padding: 0 0.5rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .contact-headline-1,
+  .contact-headline-2 {
+    font-size: 2.2rem;
   }
 }

@@ -184,7 +184,13 @@
     padding-left: 1rem;
   }
   .title-box {
-    grid-column: 1 / 4;
+    grid-column: 1 / 5;
+  }
+  .svg-link-design svg {
+    width: 95%;
+  }
+  .svg-link-dev svg {
+    width: 90%;
   }
   .designer-box {
     grid-column: 1 / 4;
@@ -212,8 +218,9 @@
   .text-intro {
     margin: 0 5%;
     margin-bottom: 2rem;
-    width: 110%;
+    width: 105%;
   }
+
   .image-box img {
     margin-left: -10%;
   }
@@ -226,6 +233,10 @@
 }
 @media screen and (max-width: 375px) {
   .image-box img {
-    margin-left: -25%;
+    margin-left: -18%;
+  }
+  .text-intro {
+    width: 100%;
+    text-shadow: #fff 1px 0 15px;
   }
 }
