@@ -2,6 +2,7 @@ export const projectsData = [
   {
     _id: 11,
     project_name: "ALUCOBOND® Lebanon",
+    favicon: "/assets/projects/aa-favicon.svg",
     url: "https://anidconstruction.com/",
     desktop: "/assets/projects/aa-website.jpg",
     phone: "/assets/projects/aa-website-ph.jpg",
@@ -11,6 +12,7 @@ export const projectsData = [
   {
     _id: 12,
     project_name: "CHIRINE SAYEGH | Architect",
+    favicon: "/assets/projects/cs-favicon.svg",
     url: "https://chirinesayegh.com/",
     desktop: "/assets/projects/cs-website.jpg",
     phone: "/assets/projects/cs-website-ph.jpg",
@@ -20,6 +22,7 @@ export const projectsData = [
   {
     _id: 13,
     project_name: "Kareen Abdelnour | art",
+    favicon: "/assets/projects/ka-favicon.svg",
     url: "https://kareenabdelnour.com/",
     desktop: "/assets/projects/ka-website.jpg",
     phone: "/assets/projects/ka-website-ph.jpg",

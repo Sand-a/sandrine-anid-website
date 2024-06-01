@@ -35,9 +35,9 @@ const Projects = ({ projectsData }) => {
                 <div className="project-text">
                   <div>
                     <img
-                      className="arrow-right"
-                      src="/assets/icons/arrow-right.svg"
-                      alt=""
+                      className="project-favicon"
+                      src={project.favicon}
+                      alt="project-favicon"
                     />
                     <h1 className="card-slogan"> {project.project_name}</h1>
                   </div>

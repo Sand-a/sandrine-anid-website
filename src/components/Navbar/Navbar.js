@@ -20,7 +20,7 @@ const Navbar = ({ menuData }) => {
     <>
       <div className="header">
         <div className="navbar container">
-          <LinkS to="hero" offset={-90} smooth={true} className="navbar-logos">
+          <LinkS to="hero" offset={-100} smooth={true} className="navbar-logos">
             <div className="logo-icon">
               <SLogoSvg />
             </div>
@@ -39,7 +39,7 @@ const Navbar = ({ menuData }) => {
                         to={item.to}
                         spy={true}
                         smooth={true}
-                        offset={-80}
+                        offset={-100}
                         duration={500}
                       >
                         {item.name}

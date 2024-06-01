@@ -44,7 +44,7 @@
 .project-container {
   border-radius: 2.5rem;
   background-color: #fff;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.133);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.133);
 }
 .project-container img {
   border-radius: 0 0 1.5rem 1.5rem;
@@ -76,13 +76,13 @@
   margin-top: -3rem;
   margin-bottom: 10rem;
   border-radius: 0 2rem;
-  padding: 7rem 2rem;
+  padding: 8rem 2rem;
 }
 .project-text div {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .project-text p {
@@ -92,13 +92,10 @@
 .project-text p b {
   margin-right: 0.5rem;
 }
-.arrow-right {
-  height: 4rem;
+.project-favicon {
+  height: 2.5rem;
   margin-bottom: 2rem;
   padding: 0 0.5rem 0 2rem;
-}
-.project-text a {
-  margin-left: 3rem;
 }
 
 @media screen and (max-width: 650px) {

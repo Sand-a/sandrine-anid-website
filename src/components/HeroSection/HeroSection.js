@@ -7,13 +7,20 @@ import DesignSvg from "../DesignSvg";
 import { Link as LinkS } from "react-scroll";
 
 const HeroSection = () => {
+  // const isMobile = window.innerWidth < 768;
+
   return (
     <>
-      <section id="hero" className="container hero-section grid ">
+      <section
+        id="hero"
+        className="container hero-section grid "
+        style={{ width: "100%" }}
+      >
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
+          style={{ width: "100%" }}
           className="image-box"
         >
           <img src="/assets/sa-photo.png" alt="profile-pic" />
