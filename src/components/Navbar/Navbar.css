@@ -78,6 +78,9 @@
 /* mobile menu navbar */
 
 @media screen and (max-width: 975px) {
+  .header {
+    opacity: 1;
+  }
   .menu-btn {
     display: block;
   }
