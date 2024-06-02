@@ -11,46 +11,21 @@ import { projectsData } from "./components/data/projectsData";
 import Skills from "./components/Skills/Skills";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
-import { motion } from "framer-motion";
-import { sectionRevealVariants } from "./components/data/animations";
 
 function App() {
   return (
     <div className="App">
       <Navbar menuData={menuData} />
       <HeroSection />
-      <motion.section
-        variants={sectionRevealVariants}
-        initial="hidden"
-        whileInView="show"
-        viewport="when"
-      >
-        <WhatIDo cardsData={cardsData} />
-      </motion.section>
-      <motion.section
-        variants={sectionRevealVariants}
-        initial="hidden"
-        whileInView="show"
-        viewport="when"
-      >
-        <Skills skillsData={skillsData} />{" "}
-      </motion.section>
-      <motion.section
-        variants={sectionRevealVariants}
-        initial="hidden"
-        whileInView="show"
-        viewport="when"
-      >
-        <Projects projectsData={projectsData} />{" "}
-      </motion.section>
-      <motion.section
-        variants={sectionRevealVariants}
-        initial="hidden"
-        whileInView="show"
-        viewport="when"
-      >
-        <Contact />
-      </motion.section>
+
+      <WhatIDo cardsData={cardsData} />
+
+      <Skills skillsData={skillsData} />
+
+      <Projects projectsData={projectsData} />
+
+      <Contact />
+
       <Footer menuData={menuData} />
     </div>
   );
