@@ -35,8 +35,22 @@ function App() {
       >
         <Skills skillsData={skillsData} />{" "}
       </motion.section>
-      <Projects projectsData={projectsData} />
-      <Contact />
+      <motion.section
+        variants={sectionRevealVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport="when"
+      >
+        <Projects projectsData={projectsData} />{" "}
+      </motion.section>
+      <motion.section
+        variants={sectionRevealVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport="when"
+      >
+        <Contact />
+      </motion.section>
       <Footer menuData={menuData} />
     </div>
   );
