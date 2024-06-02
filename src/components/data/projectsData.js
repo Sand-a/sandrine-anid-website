@@ -17,7 +17,7 @@ export const projectsData = [
     desktop: "/assets/projects/cs-website.jpg",
     phone: "/assets/projects/cs-website-ph.jpg",
     design: "Art direction / Logo design / Image refinement",
-    coding: "HTML, & React.js",
+    coding: "HTML, CSS & React.js",
   },
   {
     _id: 13,
