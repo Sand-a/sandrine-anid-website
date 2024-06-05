@@ -23,7 +23,10 @@ const Projects = ({ sectionRevealVariants, projectsData }) => {
             {projectsData.map((project) => {
               return (
                 <div className="project-detail">
-                  <motion.div
+                  <motion.a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={project.url}
                     inital="initial"
                     animate="initial"
                     whileHover="animate"
@@ -38,7 +41,7 @@ const Projects = ({ sectionRevealVariants, projectsData }) => {
                     >
                       <img src={project.phone} alt="" />
                     </motion.div>
-                  </motion.div>
+                  </motion.a>
                   <div className="project-text">
                     <div>
                       <img
@@ -57,15 +60,6 @@ const Projects = ({ sectionRevealVariants, projectsData }) => {
                       <b className="card-skills">Developement tools:</b>
                       {project.coding}
                     </p>
-
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href={project.url}
-                      className="btn form-btn"
-                    >
-                      Visit Website
-                    </a>
                   </div>
                 </div>
               );
