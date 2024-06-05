@@ -11,6 +11,7 @@ import { projectsData } from "./components/data/projectsData";
 import Skills from "./components/Skills/Skills";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
+import { sectionRevealVariants } from "./components/data/animationsData";
 
 function App() {
   return (
@@ -18,13 +19,22 @@ function App() {
       <Navbar menuData={menuData} />
       <HeroSection />
 
-      <WhatIDo cardsData={cardsData} />
+      <WhatIDo
+        sectionRevealVariants={sectionRevealVariants}
+        cardsData={cardsData}
+      />
 
-      <Skills skillsData={skillsData} />
+      <Skills
+        sectionRevealVariants={sectionRevealVariants}
+        skillsData={skillsData}
+      />
 
-      <Projects projectsData={projectsData} />
+      <Projects
+        sectionRevealVariants={sectionRevealVariants}
+        projectsData={projectsData}
+      />
 
-      <Contact />
+      <Contact sectionRevealVariants={sectionRevealVariants} />
 
       <Footer menuData={menuData} />
     </div>

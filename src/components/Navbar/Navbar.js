@@ -3,6 +3,7 @@ import { Link as LinkS } from "react-scroll";
 
 import "./Navbar.css";
 import SLogoSvg from "../SLogoSvg";
+import HamburgerSvg from "../HamburgerSvg";
 
 const Navbar = ({ menuData }) => {
   const [menuClicked, setMenuClicked] = useState(false);
@@ -42,7 +43,7 @@ const Navbar = ({ menuData }) => {
                         offset={-100}
                         duration={500}
                       >
-                        {item.name}
+                        <span>{item.name}</span>
                       </LinkS>
                     </li>
                   </>
@@ -50,21 +51,14 @@ const Navbar = ({ menuData }) => {
               })}
             </ul>
           </nav>
+
           {menuClicked ? (
             <button onClick={menuClose} className="menu-btn">
-              <img
-                className="hamburger hamburger--close"
-                src="/assets/menu_icons/menu-close.svg"
-                alt=""
-              />
+              <HamburgerSvg menuClicked={menuClicked} menuClose={menuClose} />
             </button>
           ) : (
             <button onClick={menuOpen} className="menu-btn">
-              <img
-                className="hamburger hamburger--open"
-                src="/assets/menu_icons/menu-open.svg"
-                alt=""
-              />
+              <HamburgerSvg />
             </button>
           )}
         </div>

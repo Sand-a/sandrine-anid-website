@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 import "./Contact.css";
 
-const Contact = () => {
+const Contact = ({ sectionRevealVariants }) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -26,59 +27,67 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <div id="contact" className="section section--4 container section-contact">
-      <div className="contact-headline">
-        <h1 className="primary-headline contact-headline-1">
-          Let’s get in Touch
-        </h1>
-        <h1 className="primary-headline contact-headline contact-headline-2">
-          Drop me a Line !
-        </h1>
-      </div>
-      <form ref={form} onSubmit={sendEmail} className="contact-form">
-        <div className="form-group">
-          <label for="name" className="bodytext">
-            Your Name
-          </label>
-          <input
-            className="searchfield"
-            type="text"
-            placeholder="name"
-            name="user_name"
-            required
-          />
+    <section id="contact" className=" section--4">
+      <motion.div
+        variants={sectionRevealVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport="when"
+        className="section container section-contact"
+      >
+        <div className="contact-headline">
+          <h1 className="primary-headline contact-headline-1">
+            Let’s get in Touch
+          </h1>
+          <h1 className="primary-headline contact-headline contact-headline-2">
+            Drop me a Line !
+          </h1>
         </div>
-        <div className="form-group">
-          <label for="email" className="bodytext">
-            Your email
-          </label>
-          <input
-            className="searchfield"
-            type="text"
-            placeholder="Email"
-            name="user_email"
-            required
-          />
-        </div>
-        <div className="form-group">
-          <label for="message" className="bodytext">
-            Your message
-          </label>
-          <textarea
-            className="searchfield"
-            type="text"
-            name="user_message"
-            cols="30"
-            rows="10"
-          ></textarea>
+        <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div className="form-group">
-            <button className="btn form-btn" type="submit">
-              Send
-            </button>
+            <label for="name" className="bodytext">
+              Your Name
+            </label>
+            <input
+              className="searchfield"
+              type="text"
+              placeholder="name"
+              name="user_name"
+              required
+            />
           </div>
-        </div>
-      </form>
-    </div>
+          <div className="form-group">
+            <label for="email" className="bodytext">
+              Your email
+            </label>
+            <input
+              className="searchfield"
+              type="text"
+              placeholder="Email"
+              name="user_email"
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label for="message" className="bodytext">
+              Your message
+            </label>
+            <textarea
+              className="searchfield"
+              type="text"
+              name="user_message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <div className="form-group">
+              <button className="btn form-btn" type="submit">
+                Send
+              </button>
+            </div>
+          </div>
+        </form>
+      </motion.div>
+    </section>
   );
 };
 
