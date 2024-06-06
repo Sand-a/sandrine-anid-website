@@ -3,7 +3,7 @@ export const projectsData = [
     _id: 11,
     project_name: "ALUCOBOND® Lebanon",
     favicon: "/assets/projects/aa-favicon.svg",
-    url: "https://anidconstruction.com/",
+    url: "https://anid-alucobond.netlify.app/",
     desktop: "/assets/projects/aa-website.jpg",
     phone: "/assets/projects/aa-website-ph.jpg",
     design: "Art direction / Logo design / Image refinement",

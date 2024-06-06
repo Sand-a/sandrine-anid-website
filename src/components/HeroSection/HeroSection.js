@@ -35,7 +35,7 @@ const HeroSection = () => {
               viewport={{ once: true }}
             >
               <LinkS
-                to="ui-ux-design"
+                // to="ui-ux-design"
                 className="svg-link svg-link-design"
                 offset={-90}
                 smooth={true}
@@ -55,7 +55,7 @@ const HeroSection = () => {
               }}
             >
               <LinkS
-                to="front-end-development"
+                // to="front-end-development"
                 className="svg-link svg-link-dev"
                 offset={-90}
                 smooth={true}
