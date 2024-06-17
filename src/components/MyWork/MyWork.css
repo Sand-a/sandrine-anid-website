@@ -1,6 +1,5 @@
 .projects-section {
   background-color: var(--light-grey);
-  overflow-x: hidden;
 }
 .projects-headline {
   position: relative;

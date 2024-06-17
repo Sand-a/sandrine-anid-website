@@ -80,6 +80,9 @@ ul {
 }
 
 @media screen and (max-width: 975px) {
+  .section {
+    padding: 8rem 0;
+  }
   .grid--col-3 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -88,9 +91,6 @@ ul {
   }
 }
 @media screen and (max-width: 650px) {
-  .section {
-    padding: 8rem 0;
-  }
   .grid--col-3 {
     grid-template-columns: 1fr;
   }
