@@ -232,6 +232,7 @@
     margin-bottom: 3rem;
   }
   .svg-link-design svg {
+    padding-left: 1rem;
     width: 90%;
   }
   .svg-link-dev svg {

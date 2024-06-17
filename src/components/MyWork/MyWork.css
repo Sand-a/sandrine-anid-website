@@ -1,5 +1,6 @@
 .projects-section {
   background-color: var(--light-grey);
+  overflow-x: hidden;
 }
 .projects-headline {
   position: relative;
@@ -117,7 +118,7 @@
     width: 2em;
   }
   .projects-wrap {
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem 0 1rem 2.5rem;
   }
   .project-desktop-container {
     z-index: 1;
