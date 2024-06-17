@@ -9,14 +9,14 @@ const Skills = ({ sectionRevealVariants, skillsData }) => {
         variants={sectionRevealVariants}
         initial="hidden"
         whileInView="show"
-        viewport="when"
+        viewport={{ once: true, amount: 0.2 }}
         className="section skills-section"
       >
         <div className="skills-title">
           <h1 className="primary-headline skills-headline">
             My Skills{" "}
             <span>
-              <img
+              {/* <img
                 className="eye-icon eye-open"
                 src="/assets/icons/eye-open.svg"
                 alt=""
@@ -34,7 +34,7 @@ const Skills = ({ sectionRevealVariants, skillsData }) => {
                 className="eye-icon eye-close"
                 src="/assets/icons/eye-close.svg"
                 alt=""
-              ></motion.img>
+              ></motion.img> */}
             </span>
           </h1>
         </div>

@@ -11,7 +11,7 @@
   height: 5.5rem;
 }
 .logo-footer-name {
-  height: 3rem;
+  height: 3.3rem;
   margin-bottom: 1rem;
 }
 
@@ -65,9 +65,7 @@
   .logo-icon-black {
     height: 4rem;
   }
-  .logo-footer-name {
-    height: 2.2rem;
-  }
+
   .footer-contact img {
     height: 4rem;
   }
@@ -92,5 +90,8 @@
   }
   .footer-signature p {
     font-size: 1.4rem;
+  }
+  .logo-footer-name {
+    height: 2.8rem;
   }
 }

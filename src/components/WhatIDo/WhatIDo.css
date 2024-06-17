@@ -1,11 +1,8 @@
 .what-i-do-section {
-  width: 100%;
-
-  background-color: var(--light-grey);
+  background-color: var(--background-grey);
 }
 .what-i-do-headline {
   position: relative;
-  margin-top: -3rem;
 }
 @keyframes floating {
   0% {
@@ -18,7 +15,7 @@
     transform: translate(-63%, 70%);
   }
 }
-.what-i-do-headline::before {
+/* .what-i-do-headline::before {
   content: "";
   background-image: url("/public/assets/icons/cloud-icon.svg");
   background-repeat: no-repeat;
@@ -28,15 +25,18 @@
   height: 1.8em;
   width: 1.8em;
   animation: floating 5s ease-in 1s infinite;
-}
-.what-i-do-headline::after {
+} */
+/* .what-i-do-headline::after {
   content: "";
+  position: absolute;
+  top: -1rem;
+  transform: translateX(5%);
   background-image: url("/public/assets/icons/pt-interrogration.svg");
   background-repeat: no-repeat;
   display: inline-block;
-  height: 1.8em;
-  width: 1.8em;
-}
+  height: 1.5em;
+  width: 1.5em;
+} */
 
 .cards-container {
   padding: 0 3.5rem;

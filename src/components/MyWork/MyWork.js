@@ -1,21 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./Projects.css";
+import "./MyWork.css";
 import "../Card/Card.css";
 
 const swipe = {
   initial: { x: -10, zIndex: 1 },
   animate: { x: [50, -30], zIndex: 3 },
 };
-const Projects = ({ sectionRevealVariants, projectsData }) => {
+const MyWork = ({ sectionRevealVariants, projectsData }) => {
   return (
     <>
-      <section id="projects" className="section--3">
+      <section id="my-latest-work" className="section--3">
         <motion.div
           variants={sectionRevealVariants}
           initial="hidden"
           whileInView="show"
-          viewport="when"
+          viewport={{ once: true, amount: 0.2 }}
           className="section projects-section"
         >
           <h1 className="primary-headline projects-headline">My Latest work</h1>
@@ -71,4 +71,4 @@ const Projects = ({ sectionRevealVariants, projectsData }) => {
   );
 };
 
-export default Projects;
+export default MyWork;

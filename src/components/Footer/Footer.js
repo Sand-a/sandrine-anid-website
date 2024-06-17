@@ -18,7 +18,7 @@ const Footer = ({ menuData }) => {
                 />
                 <img
                   className="logo-footer-name"
-                  src="/assets/logo/logo.svg"
+                  src="/assets/logo/logo-white.svg"
                   alt=""
                 />
               </LinkS>

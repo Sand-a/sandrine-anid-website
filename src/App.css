@@ -3,15 +3,16 @@
   --family-font: "Montserrat", sans-serif;
   --nav-links: #fff;
   --nav-links-active: #ffe53b;
-  --nav-links-hover: #ffe53b;
+  --nav-links-hover: #ffe53b54;
 
   --white: #fff;
   --yellow: #ffe53b;
+  --black: #1c1d1d;
 
-  --line-color: #b3a597;
-  --text-color: #525252;
+  --text-color: #121212;
   --text--bg: rgba(0, 0, 0, 0.65);
-  --light-grey: #e9e9e9;
+  --light-grey: #e8e8e8;
+  --background-grey: #f5f7f8;
   --light-bg: #f1f1f1;
   --image-darker: rgba(0, 0, 0, 0.5);
 }
@@ -48,17 +49,36 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-
+.section {
+  padding: 15rem 0 18rem 0;
+  width: 100%;
+}
+.headline-title {
+  display: flex;
+  justify-content: center;
+}
 .primary-headline {
   text-transform: uppercase;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 4rem;
   letter-spacing: -1px;
-  margin-bottom: 12rem;
+  margin-bottom: 10rem;
 }
-.section {
-  padding: 18rem 0;
+
+.btn {
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: inherit;
+  color: black;
 }
+
 @media screen and (max-width: 975px) {
   .grid--col-3 {
     grid-template-columns: repeat(2, 1fr);
@@ -69,7 +89,7 @@ ul {
 }
 @media screen and (max-width: 650px) {
   .section {
-    padding: 8rem 0;
+    padding: 10rem 0;
   }
   .grid--col-3 {
     grid-template-columns: 1fr;
@@ -79,9 +99,15 @@ ul {
     font-size: 3rem;
     margin-bottom: 8rem;
   }
+  .btn {
+    font-size: 1.6rem;
+  }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .primary-headline {
     font-size: 2.5rem;
+  }
+  .btn {
+    padding: 0.7rem 1rem;
   }
 }

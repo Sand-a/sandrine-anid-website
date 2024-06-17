@@ -32,7 +32,7 @@ const Contact = ({ sectionRevealVariants }) => {
         variants={sectionRevealVariants}
         initial="hidden"
         whileInView="show"
-        viewport="when"
+        viewport={{ once: true, amount: 0.2 }}
         className="section container section-contact"
       >
         <div className="contact-headline">
@@ -46,38 +46,38 @@ const Contact = ({ sectionRevealVariants }) => {
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div className="form-group">
             <label for="name" className="bodytext">
-              Your Name
+              Name *
             </label>
             <input
               className="searchfield"
               type="text"
-              placeholder="name"
+              // placeholder="name"
               name="user_name"
               required
             />
           </div>
           <div className="form-group">
             <label for="email" className="bodytext">
-              Your email
+              Email *
             </label>
             <input
               className="searchfield"
               type="text"
-              placeholder="Email"
+              // placeholder="Email"
               name="user_email"
               required
             />
           </div>
           <div className="form-group">
             <label for="message" className="bodytext">
-              Your message
+              Message
             </label>
             <textarea
               className="searchfield"
               type="text"
               name="user_message"
               cols="30"
-              rows="10"
+              rows="5"
             ></textarea>
             <div className="form-group">
               <button className="btn form-btn" type="submit">

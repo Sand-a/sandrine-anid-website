@@ -3,12 +3,18 @@
   flex-direction: column;
   align-items: flex-start;
 
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
   margin-left: 5rem;
 }
 .contact-headline-1,
 .contact-headline-2 {
-  margin-bottom: 0;
+  margin-bottom: -0.8rem;
+  font-size: 3.8rem;
+  letter-spacing: -2px;
+}
+.contact-headline-2 {
+  margin-left: 3rem;
+  position: relative;
 }
 
 .contact-headline-1:after {
@@ -21,10 +27,7 @@
   height: 1.8em;
   width: 1.8em;
 }
-.contact-headline-2 {
-  margin-left: 3rem;
-  position: relative;
-}
+
 .contact-headline-2:before {
   content: "";
   background-image: url("/public/assets/icons/cloud-icon.svg");
@@ -46,9 +49,14 @@
 }
 .contact-form input,
 .contact-form textarea {
-  font-size: 1.6rem;
-  background-color: var(--light-grey);
+  padding: 1rem 1.3rem;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  background-color: var(--white);
   border: 1.5px solid var(--light-grey);
+}
+.contact-form textarea {
+  margin-bottom: 3rem;
 }
 .contact-form input:hover,
 .contact-form textarea:hover {
@@ -76,7 +84,8 @@ input[name="user_email"] {
 
 .form-btn {
   align-self: center;
-  margin-top: 3rem;
+
+  width: 50%;
   border-radius: 50rem;
   background-color: black;
   border: 1.5px solid black;
@@ -89,7 +98,6 @@ input[name="user_email"] {
 }
 .searchfield {
   width: 40rem;
-  padding: 2rem;
   background-color: var(--light-grey);
   border-radius: 3pt;
   border: none;
