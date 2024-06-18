@@ -19,10 +19,10 @@ const Navbar = ({ menuData }) => {
 
   return (
     <>
-      <div
-        // initial={{ y: -100 }}
-        // whileInView={{ y: 0, transition: { duration: 1 } }}
-        // viewport={{ once: true }}
+      <motion.div
+        initial={{ y: -100 }}
+        whileInView={{ y: 0, transition: { duration: 1 } }}
+        viewport={{ once: true }}
         className="header"
       >
         <div className="navbar container">
@@ -85,7 +85,7 @@ const Navbar = ({ menuData }) => {
             </ul>
           </nav>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
