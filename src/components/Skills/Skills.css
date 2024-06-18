@@ -49,6 +49,7 @@
   font-weight: 400;
   box-shadow: 0.5rem 0 var(--yellow);
   cursor: auto;
+  letter-spacing: -0.2px;
   padding: 1rem;
 }
 @media screen and (max-width: 975px) {
