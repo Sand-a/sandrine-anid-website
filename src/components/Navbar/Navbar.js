@@ -7,7 +7,7 @@ import HamburgerSvg from "../HamburgerSvg";
 
 const Navbar = ({ menuData }) => {
   const [menuClicked, setMenuClicked] = useState(false);
-  const isMobile = window.innerWidth <= 768;
+  // const isMobile = window.innerWidth <= 768;
   const menuOpen = () => {
     setMenuClicked(true);
     document.body.style.overflow = "hidden";
@@ -50,35 +50,19 @@ const Navbar = ({ menuData }) => {
               {menuData.map((item) => {
                 return (
                   <>
-                    {isMobile ? (
-                      <li key={item._id} className="nav-items">
-                        <LinkS
-                          onClick={menuClose}
-                          activeclassname="active"
-                          to={item.to}
-                          spy={true}
-                          smooth={true}
-                          offset={-100}
-                          duration={1200}
-                        >
-                          {item.name}
-                        </LinkS>
-                      </li>
-                    ) : (
-                      <motion.li key={item._id} className="nav-items">
-                        <LinkS
-                          onClick={menuClose}
-                          activeclassname="active"
-                          to={item.to}
-                          spy={true}
-                          smooth={true}
-                          offset={-100}
-                          duration={1200}
-                        >
-                          {item.name}
-                        </LinkS>
-                      </motion.li>
-                    )}
+                    <li key={item._id} className="nav-items">
+                      <LinkS
+                        onClick={menuClose}
+                        activeclassname="active"
+                        to={item.to}
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={1200}
+                      >
+                        {item.name}
+                      </LinkS>
+                    </li>
                   </>
                 );
               })}
