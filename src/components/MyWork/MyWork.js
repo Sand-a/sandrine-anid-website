@@ -15,7 +15,7 @@ const MyWork = ({ sectionRevealVariants, projectsData }) => {
           variants={sectionRevealVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.05 }}
+          viewport={{ once: true, amount: 0.1 }}
           className="section projects-section"
         >
           <h1 className="primary-headline projects-headline">My Latest work</h1>

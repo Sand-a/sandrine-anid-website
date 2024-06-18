@@ -32,7 +32,7 @@ const Contact = ({ sectionRevealVariants }) => {
         variants={sectionRevealVariants}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.1 }}
         className="section container section-contact"
       >
         <div className="contact-headline">
