@@ -45,14 +45,12 @@
 .project-container {
   border: 0.5rem solid var(--white);
   border-radius: 1.5rem;
-
   background-color: var(--white);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.133);
   margin-bottom: 1rem;
 }
 
 .project-desktop-container {
-  line-height: 0;
   width: 80%;
   z-index: 2;
 }
@@ -64,7 +62,7 @@
 }
 .project-phone-container {
   position: absolute;
-  line-height: 0;
+
   right: 3rem;
 
   width: 23%;
