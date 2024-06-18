@@ -6,7 +6,7 @@ export const projectsData = [
     url: "https://anidconstruction.com/",
     desktop: "/assets/projects/aa-website.jpg",
     phone: "/assets/projects/aa-website-ph.jpg",
-    design: "Art direction / Logo design / Image refinement",
+    design: "Art direction / Logo design / Image refinement.",
     coding: "HTML, CSS & React.js",
   },
   {
@@ -16,7 +16,7 @@ export const projectsData = [
     url: "https://chirinesayegh.com/",
     desktop: "/assets/projects/cs-website.jpg",
     phone: "/assets/projects/cs-website-ph.jpg",
-    design: "Art direction / Logo design / Image refinement",
+    design: "Art direction / Logo design / Image refinement.",
     coding: "HTML, CSS & React.js",
   },
   {
@@ -26,7 +26,7 @@ export const projectsData = [
     url: "https://kareenabdelnour.com/",
     desktop: "/assets/projects/ka-website.jpg",
     phone: "/assets/projects/ka-website-ph.jpg",
-    design: "Art direction / Logo design / Image refinement",
+    design: "Art direction / Logo design / Image refinement.",
     coding: "HTML, CSS & JavaScript",
   },
 ];

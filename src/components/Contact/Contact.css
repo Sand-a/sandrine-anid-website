@@ -125,8 +125,12 @@ input[name="user_email"] {
   .form-group {
     padding: 0 1rem;
   }
+  .contact-form {
+    gap: 1.5rem;
+  }
+
   .contact-headline {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   .contact-headline-1,
   .contact-headline-2 {

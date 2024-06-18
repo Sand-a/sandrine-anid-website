@@ -63,33 +63,14 @@
 }
 @media screen and (max-width: 975px) {
   .logo-icon-black {
-    height: 4rem;
-  }
-
-  .footer-contact img {
-    height: 4rem;
-  }
-  .footer-contact {
-    gap: 1rem;
-  }
-}
-@media screen and (max-width: 750px) {
-  .logo-icon-black {
     height: 3.5rem;
+  }
+  .footer-links {
+    margin-bottom: 2.5rem;
   }
   .footer-links a {
     gap: 2rem;
   }
-  .footer-links {
-    gap: 2rem;
-  }
-  .footer-text-warp {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-
   .footer-signature {
     margin-top: -3rem;
     padding: 12rem 1rem 5rem;
@@ -99,5 +80,33 @@
   }
   .logo-footer-name {
     height: 2.6rem;
+  }
+
+  .footer-contact img {
+    height: 4rem;
+  }
+  .footer-contact {
+    margin-bottom: 0;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer-links {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    gap: 2rem;
+  }
+
+  .footer-contact {
+    margin-bottom: 0.5rem;
+  }
+  .footer-text-warp {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .footer-signature {
+    padding: 8rem 1rem 4rem;
   }
 }
