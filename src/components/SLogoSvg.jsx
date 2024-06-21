@@ -18,8 +18,8 @@ const SLogoSvg = (props) => (
       id="white-slash"
       d="m31.1 34 59.1 27.9-31.1 14.7L0 48.7z"
       style={{
-        opacity: 0.7,
-        fill: "var(--yellow)",
+        opacity: props.opacity,
+        fill: props.color,
         enableBackground: "new",
       }}
     />

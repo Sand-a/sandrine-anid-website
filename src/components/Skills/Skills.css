@@ -46,11 +46,12 @@
   /* background-color: var(--light-grey); */
   background-color: transparent;
   border: 1.3px solid var(--text-color);
+  border-radius: 50rem;
   font-weight: 500;
   box-shadow: 0.5rem 0 var(--yellow);
   cursor: auto;
-  letter-spacing: -0.2px;
-  padding: 1rem;
+  letter-spacing: -0.1px;
+  padding: 1.2rem;
 }
 @media screen and (max-width: 975px) {
   .skills-btn-wrape {

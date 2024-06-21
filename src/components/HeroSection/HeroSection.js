@@ -15,14 +15,14 @@ const HeroSection = () => {
         style={{ width: "100%" }}
       >
         <motion.div
-          initial={{ opacity: 0, scale: 0 }}
+          className="image-box"
+          initial={{ opacity: 0, x: 190 }}
           whileInView={{
             opacity: 1,
-            scale: 1,
-            transition: { delay: 0.8, duration: 1 },
+            x: 0,
+            transition: { duration: 1 },
           }}
           viewport={{ once: true }}
-          className="image-box"
         >
           <img src="/assets/sa-photo.png" alt="sa profile pic" />
         </motion.div>
@@ -77,7 +77,7 @@ const HeroSection = () => {
           </p>
 
           <p className="bodytext text-intro text-intro-2">
-            I will design & develop a website that you and your audience will
+            I will design and develop a website that you and your audience will
             love!
           </p>
 

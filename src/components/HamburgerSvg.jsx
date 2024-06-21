@@ -17,7 +17,7 @@ const HamburgerSvg = (props) => (
       id="backline"
       d="m0 19.4 90.2 42.5v29.4L0 48.7z"
       style={{
-        opacity: 0.7,
+        opacity: 0.8,
         fill: "var(--yellow)",
         enableBackground: "new",
       }}

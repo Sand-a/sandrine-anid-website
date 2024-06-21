@@ -1,6 +1,7 @@
 import React from "react";
 import { Link as LinkS } from "react-scroll";
 import "./Footer.css";
+import SLogoSvg from "../SLogoSvg";
 
 const Footer = ({ menuData }) => {
   return (
@@ -9,13 +10,9 @@ const Footer = ({ menuData }) => {
         <div className=" footer-container ">
           <div className="container footer-text-warp">
             <div className="footer-links">
-              <LinkS to="hero" offset={-90} smooth={true}>
+              <LinkS to="hero" offset={-100} smooth={true}>
                 {" "}
-                <img
-                  className="logo-icon-black"
-                  src="/assets/logo/s-logo-black.svg"
-                  alt=""
-                />
+                <SLogoSvg />
                 <img
                   className="logo-footer-name"
                   src="/assets/logo/logo-white.svg"
@@ -43,7 +40,7 @@ const Footer = ({ menuData }) => {
               </div>
             </div>
             <div className="footer-contact">
-              <a href="mailto:hello@sandrineanid.com">
+              <a href="mailto:sandrine.anid@gmail.com">
                 <img src="/assets/icons/email-icon.svg" alt="" />
               </a>
               <div className="contact-footer-links">

@@ -28,7 +28,7 @@ const Navbar = ({ menuData }) => {
         <div className="navbar container">
           <LinkS to="hero" offset={-100} smooth={true} className="navbar-logos">
             <div className="logo-icon">
-              <SLogoSvg />
+              <SLogoSvg color={"var(--yellow)"} opacity={0.8} />
             </div>
             <img
               className="logo-name-white"
@@ -58,7 +58,7 @@ const Navbar = ({ menuData }) => {
                           to={item.to}
                           spy={true}
                           smooth={true}
-                          offset={-90}
+                          offset={item.mobOffset}
                           duration={1200}
                         >
                           {item.name}
@@ -72,7 +72,7 @@ const Navbar = ({ menuData }) => {
                           to={item.to}
                           spy={true}
                           smooth={true}
-                          offset={-100}
+                          offset={item.desktopOffset}
                           duration={1200}
                         >
                           {item.name}

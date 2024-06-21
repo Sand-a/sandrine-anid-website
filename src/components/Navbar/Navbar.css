@@ -6,9 +6,8 @@
 
   width: 100vw;
 
-  opacity: 0.9;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-  background-color: black;
+  background-color: var(--black-opacity);
   z-index: 11;
 }
 
@@ -25,12 +24,12 @@
   align-items: center;
 }
 .logo-icon {
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 4rem;
+  width: 4rem;
   margin-right: 3rem;
 }
 .logo-name-white {
-  height: 3.3rem;
+  height: 3rem;
   opacity: 0.9;
 }
 .nav-list {
@@ -80,9 +79,6 @@
 /* mobile menu navbar */
 
 @media screen and (max-width: 975px) {
-  .header {
-    opacity: 1;
-  }
   .menu-btn {
     display: block;
     width: 4.5rem;
