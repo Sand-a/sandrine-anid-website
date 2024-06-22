@@ -238,15 +238,18 @@
     justify-self: center;
     align-self: end;
     background-color: #ffffff79;
+
     border-radius: 0.5rem;
     padding: 2rem 0;
     width: 90%;
   }
   .text-intro {
+    margin-bottom: 2rem;
     width: 100%;
   }
 
   .text-intro-2 {
+    font-size: 1.7rem;
     margin-bottom: 3rem;
   }
 

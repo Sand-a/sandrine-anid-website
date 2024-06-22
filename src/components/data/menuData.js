@@ -31,7 +31,7 @@ export const menuData = [
     _id: 5,
     name: "Contact",
     to: "contact",
-    mobOffset: -65,
+    mobOffset: -40,
     desktopOffset: 30,
   },
 ];
