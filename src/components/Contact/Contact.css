@@ -1,8 +1,8 @@
 .contact-headline {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 
+  align-items: flex-start;
   margin-bottom: 5rem;
   margin-left: 5rem;
 }
@@ -99,20 +99,13 @@ input[name="user_email"] {
   border: none;
 }
 @media screen and (max-width: 750px) {
-  .contact-form {
-    align-items: center;
-  }
-
   .form-group {
     width: 100%;
   }
   .searchfield {
     width: 100%;
   }
-  .contact-headline {
-    align-items: center;
-    margin-left: 0;
-  }
+
   .contact-headline-2 {
     margin-left: 2rem;
   }
@@ -126,19 +119,18 @@ input[name="user_email"] {
   }
 
   .contact-headline {
+    margin-top: 1rem;
     margin-bottom: 1rem;
   }
   .contact-headline-1,
   .contact-headline-2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
 }
 @media screen and (max-width: 400px) {
-  .contact-headline-1,
-  .contact-headline-2 {
-    font-size: 2.5rem;
+  .contact-headline {
+    margin-left: 2.5rem;
   }
-
   .form-group {
     padding: 0 0.5rem;
   }
@@ -146,6 +138,6 @@ input[name="user_email"] {
 @media screen and (max-width: 350px) {
   .contact-headline-1,
   .contact-headline-2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 }
