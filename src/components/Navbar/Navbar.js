@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link as LinkS } from "react-scroll";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import "./Navbar.css";
 import SLogoSvg from "../SLogoSvg";
 import HamburgerSvg from "../HamburgerSvg";
@@ -61,73 +61,62 @@ const Navbar = ({ menuData }) => {
               <HamburgerSvg />
             </button>
           )}
-          <AnimatePresence>
-            {menuClicked ? (
-              <motion.div
-                key="mobile-nav"
-                variants={{
-                  open: { opacity: 1 },
-                  closed: { opacity: 0 },
-                }}
-                animate="open"
+
+          {menuClicked ? (
+            <div className="nav-menu active">
+              <motion.ul
+                variants={containerVariants}
                 initial="closed"
+                animate="open"
                 exit="closed"
-                className="nav-menu active"
+                className="nav-list"
               >
-                <motion.ul
-                  variants={containerVariants}
-                  initial="closed"
-                  animate="open"
-                  exit="closed"
-                  className="nav-list"
-                >
-                  {menuData.map((item) => {
-                    return (
-                      <motion.li
-                        variants={itemVariants}
-                        key={item._id}
-                        className="nav-items"
+                {menuData.map((item) => {
+                  return (
+                    <motion.li
+                      variants={itemVariants}
+                      key={item._id}
+                      className="nav-items"
+                    >
+                      <LinkS
+                        onClick={menuClose}
+                        activeclassname="active"
+                        to={item.to}
+                        spy={true}
+                        smooth={true}
+                        offset={item.mobOffset}
+                        duration={1200}
                       >
-                        <LinkS
-                          onClick={menuClose}
-                          activeclassname="active"
-                          to={item.to}
-                          spy={true}
-                          smooth={true}
-                          offset={item.mobOffset}
-                          duration={1200}
-                        >
-                          {item.name}
-                        </LinkS>
-                      </motion.li>
-                    );
-                  })}
-                </motion.ul>
-              </motion.div>
-            ) : (
-              <motion.div className="nav-menu">
-                <ul className="nav-list">
-                  {menuData.map((item) => {
-                    return (
-                      <li key={item._id} className="nav-items">
-                        <LinkS
-                          onClick={menuClose}
-                          activeclassname="active"
-                          to={item.to}
-                          spy={true}
-                          smooth={true}
-                          offset={item.desktopOffset}
-                          duration={1200}
-                        >
-                          {item.name}
-                        </LinkS>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </motion.div>
-            )}
-          </AnimatePresence>
+                        {item.name}
+                      </LinkS>
+                    </motion.li>
+                  );
+                })}
+              </motion.ul>
+            </div>
+          ) : (
+            <motion.div className="nav-menu">
+              <ul className="nav-list">
+                {menuData.map((item) => {
+                  return (
+                    <li key={item._id} className="nav-items">
+                      <LinkS
+                        onClick={menuClose}
+                        activeclassname="active"
+                        to={item.to}
+                        spy={true}
+                        smooth={true}
+                        offset={item.desktopOffset}
+                        duration={1200}
+                      >
+                        {item.name}
+                      </LinkS>
+                    </li>
+                  );
+                })}
+              </ul>
+            </motion.div>
+          )}
         </div>
       </motion.nav>
     </>

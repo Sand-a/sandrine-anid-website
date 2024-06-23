@@ -87,6 +87,7 @@ const Contact = ({ sectionRevealVariants }) => {
           </div>
         </form>
       </motion.div>
+      <div className="meassage-confirmation"></div>
     </section>
   );
 };
