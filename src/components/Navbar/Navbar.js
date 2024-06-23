@@ -1,13 +1,29 @@
 import React, { useState } from "react";
 import { Link as LinkS } from "react-scroll";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import "./Navbar.css";
 import SLogoSvg from "../SLogoSvg";
 import HamburgerSvg from "../HamburgerSvg";
 
 const Navbar = ({ menuData }) => {
   const [menuClicked, setMenuClicked] = useState(false);
-  const isMobile = window.innerWidth <= 768;
+  const containerVariants = {
+    open: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2, // Delay between each child animation
+        delayChildren: 0.1, // Initial delay before starting child animations
+      },
+    },
+    closed: { opacity: 0 },
+  };
+
+  const itemVariants = {
+    open: { y: "0%", opacity: 1 },
+    closed: { y: "25%", opacity: 0 },
+  };
+  // const isMobile = window.innerWidth <= 975;
+
   const menuOpen = () => {
     setMenuClicked(true);
     document.body.style.overflow = "hidden";
@@ -19,7 +35,7 @@ const Navbar = ({ menuData }) => {
 
   return (
     <>
-      <motion.div
+      <motion.nav
         initial={{ y: -100 }}
         whileInView={{ y: 0, transition: { duration: 1 } }}
         viewport={{ once: true }}
@@ -45,13 +61,33 @@ const Navbar = ({ menuData }) => {
               <HamburgerSvg />
             </button>
           )}
-          <nav className={menuClicked ? "nav-menu active" : "nav-menu"}>
-            <ul className="nav-list">
-              {menuData.map((item) => {
-                return (
-                  <>
-                    {isMobile ? (
-                      <li key={item._id} className="nav-items">
+          <AnimatePresence>
+            {menuClicked ? (
+              <motion.div
+                key="mobile-nav"
+                variants={{
+                  open: { opacity: 1 },
+                  closed: { opacity: 0 },
+                }}
+                animate="open"
+                initial="closed"
+                exit="closed"
+                className="nav-menu active"
+              >
+                <motion.ul
+                  variants={containerVariants}
+                  initial="closed"
+                  animate="open"
+                  exit="closed"
+                  className="nav-list"
+                >
+                  {menuData.map((item) => {
+                    return (
+                      <motion.li
+                        variants={itemVariants}
+                        key={item._id}
+                        className="nav-items"
+                      >
                         <LinkS
                           onClick={menuClose}
                           activeclassname="active"
@@ -63,9 +99,17 @@ const Navbar = ({ menuData }) => {
                         >
                           {item.name}
                         </LinkS>
-                      </li>
-                    ) : (
-                      <motion.li key={item._id} className="nav-items">
+                      </motion.li>
+                    );
+                  })}
+                </motion.ul>
+              </motion.div>
+            ) : (
+              <motion.div className="nav-menu">
+                <ul className="nav-list">
+                  {menuData.map((item) => {
+                    return (
+                      <li key={item._id} className="nav-items">
                         <LinkS
                           onClick={menuClose}
                           activeclassname="active"
@@ -77,15 +121,15 @@ const Navbar = ({ menuData }) => {
                         >
                           {item.name}
                         </LinkS>
-                      </motion.li>
-                    )}
-                  </>
-                );
-              })}
-            </ul>
-          </nav>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
-      </motion.div>
+      </motion.nav>
     </>
   );
 };

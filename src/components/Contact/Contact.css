@@ -105,6 +105,10 @@ input[name="user_email"] {
   .searchfield {
     width: 100%;
   }
+  .contact-headline {
+    margin-left: 0;
+    align-items: center;
+  }
 
   .contact-headline-2 {
     margin-left: 2rem;
@@ -128,16 +132,11 @@ input[name="user_email"] {
   }
 }
 @media screen and (max-width: 400px) {
-  .contact-headline {
-    margin-left: 2.5rem;
-  }
-  .form-group {
-    padding: 0 0.5rem;
-  }
-}
-@media screen and (max-width: 350px) {
   .contact-headline-1,
   .contact-headline-2 {
     font-size: 2.5rem;
+  }
+  .form-group {
+    padding: 0 0.5rem;
   }
 }
