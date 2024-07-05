@@ -55,6 +55,7 @@
 .top-line-and {
   font-size: 3rem;
   font-weight: 700;
+  margin-left: 0.5rem;
 }
 /* .line-text-container {
   max-width: 90%;
@@ -71,7 +72,7 @@
   margin-bottom: 3rem;
 }
 .btn-cta {
-  background-color: var(--black);
+  background-color: var(--black-opacity);
   color: var(--white);
   width: 75%;
 }
@@ -122,7 +123,7 @@
   .col--1 {
     grid-column: 1 / -1;
     grid-row: 1/2;
-    margin-bottom: -8rem;
+    margin-bottom: -6rem;
   }
   .line-container {
     margin-bottom: 1.5rem;
@@ -148,7 +149,7 @@
   }
 
   .col--1 svg {
-    height: 8vh;
+    height: 8.5vh;
   }
   .image-container img {
     margin-left: -5rem;
@@ -161,12 +162,12 @@
     margin-left: 0.3rem;
   }
   .main-line {
-    font-size: 6vh;
+    font-size: 6.3vh;
     letter-spacing: -2.5px;
   }
 
   .line-text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
   }
   .line-text--1 {
@@ -178,7 +179,7 @@
     margin-bottom: 2rem;
   }
   .btn-cta {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 @media screen and (max-width: 375px) {
