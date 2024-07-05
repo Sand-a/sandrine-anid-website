@@ -1,33 +1,27 @@
-.footer-container {
-  position: relative;
-}
 .footer-text-warp {
   padding: 0 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo-icon-black {
-  height: 5.5rem;
-}
-.logo-footer-name {
-  height: 3rem;
-  margin-bottom: 1rem;
-}
-
-.footer-links {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
 }
 .footer-links svg {
   height: 4.5rem;
 }
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 3rem;
+}
+
 .footer-links a {
   display: flex;
   align-items: center;
   gap: 3rem;
+}
+
+.footer-links a img {
+  height: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .social-media-links {
@@ -39,76 +33,71 @@
   height: 2.5rem;
   margin-bottom: 0.5rem;
 }
-.footer-signature {
-  background-color: var(--yellow);
-  text-align: center;
-  margin-top: -1rem;
-  padding: 7rem 0;
-}
-.contact-footer {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-.footer-contact img {
-  height: 4rem;
-}
-.footer-contact {
-  display: flex;
-  align-items: center;
-  gap: 1.4rem;
-  margin-bottom: -3rem;
-}
+
 .contact-footer-links {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-start;
+  margin-bottom: 3rem;
 }
-@media screen and (max-width: 975px) {
-  .logo-icon-black {
-    height: 3.5rem;
+.footer-signature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: var(--black);
+  border-top: 1.5rem solid var(--accent-color);
+  padding: 5rem 0 7rem 0;
+}
+.footer-signature p {
+  font-weight: 100;
+}
+.sand-signature {
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.contact-link svg {
+  height: 1.6rem;
+  margin-left: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+.contact-link a {
+  border-bottom: 3px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+.contact-link:hover svg {
+  fill: var(--accent-color);
+}
+.contact-link:hover a {
+  border-bottom: 3px solid var(--black);
+}
+
+@media screen and (max-width: 570px) {
+  .footer-signature {
+    flex-direction: column;
   }
-  .footer-links {
-    margin-bottom: 2.5rem;
+  .footer-signature p,
+  .sand-signature {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer-links svg {
+    height: 4rem;
+  }
+  .footer-text-warp {
+    padding: 0 2rem;
   }
   .footer-links a {
     gap: 2rem;
   }
-  .footer-signature {
-    margin-top: -3rem;
-    padding: 12rem 1rem 5rem;
-  }
-  .footer-signature p {
-    font-size: 1.4rem;
-  }
-  .logo-footer-name {
-    height: 2.6rem;
-  }
-
-  .footer-contact img {
-    height: 4rem;
-  }
-  .footer-contact {
-    margin-bottom: 0;
-    gap: 1rem;
-  }
-}
-@media screen and (max-width: 750px) {
-  .footer-links {
-    margin-bottom: 1rem;
-    gap: 2rem;
-  }
-
-  .footer-contact {
-    margin-bottom: 0.5rem;
-  }
-  .footer-text-warp {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-  .footer-signature {
-    padding: 8rem 1rem 4rem;
+  .footer-links a img {
+    height: 2.5rem;
   }
 }

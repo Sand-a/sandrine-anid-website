@@ -1,14 +1,14 @@
 import "./App.css";
-import HeroSection from "./components/HeroSection/HeroSection";
-import Navbar from "./components/Navbar/Navbar";
-import MyWork from "./components/MyWork/MyWork";
 
+import Navbar from "./components/Navbar/Navbar";
+import HeroSection from "./components/HeroSection/HeroSection";
+import MyWork from "./components/MyWork/MyWork";
 import WhatIDo from "./components/WhatIDo/WhatIDo";
 import { menuData } from "./components/data/menuData";
 import { cardsData } from "./components/data/cardsData";
-import { skillsData } from "./components/data/skillsData";
+import { servicesData } from "./components/data/servicesData";
 import { projectsData } from "./components/data/projectsData";
-import Skills from "./components/Skills/Skills";
+import Services from "./components/Services/Services";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 import { sectionRevealVariants } from "./components/data/animationsData";
@@ -18,20 +18,22 @@ function App() {
     <div className="App">
       <Navbar menuData={menuData} />
       <HeroSection />
-
       <WhatIDo
         sectionRevealVariants={sectionRevealVariants}
         cardsData={cardsData}
+        menuData={menuData}
       />
 
-      <Skills
+      <Services
         sectionRevealVariants={sectionRevealVariants}
-        skillsData={skillsData}
+        servicesData={servicesData}
+        menuData={menuData}
       />
 
       <MyWork
         sectionRevealVariants={sectionRevealVariants}
         projectsData={projectsData}
+        menuData={menuData}
       />
 
       <Contact sectionRevealVariants={sectionRevealVariants} />

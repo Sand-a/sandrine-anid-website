@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-const SLogoSvg = (props) => (
+const SLogoSvg = ({ color, opacity }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
@@ -11,15 +11,14 @@ const SLogoSvg = (props) => (
       enableBackground: "new 0 0 90.2 110.7",
     }}
     viewBox="0 0 90.2 110.7"
-    {...props}
   >
     <style>{".st1{fill:#fff}"}</style>
     <path
       id="white-slash"
       d="m31.1 34 59.1 27.9-31.1 14.7L0 48.7z"
       style={{
-        opacity: props.opacity,
-        fill: props.color,
+        opacity: opacity,
+        fill: color,
         enableBackground: "new",
       }}
     />

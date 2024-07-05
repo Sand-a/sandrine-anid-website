@@ -11,7 +11,7 @@ const Navbar = ({ menuData }) => {
     open: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2, // Delay between each child animation
+        staggerChildren: 0.1, // Delay between each child animation
         delayChildren: 0.1, // Initial delay before starting child animations
       },
     },
@@ -22,7 +22,6 @@ const Navbar = ({ menuData }) => {
     open: { y: "0%", opacity: 1 },
     closed: { y: "25%", opacity: 0 },
   };
-  // const isMobile = window.innerWidth <= 975;
 
   const menuOpen = () => {
     setMenuClicked(true);
@@ -44,7 +43,7 @@ const Navbar = ({ menuData }) => {
         <div className="navbar container">
           <LinkS to="hero" offset={-100} smooth={true} className="navbar-logos">
             <div className="logo-icon">
-              <SLogoSvg color={"var(--yellow)"} opacity={0.8} />
+              <SLogoSvg color={"var(--accent-color)"} opacity={1} />
             </div>
             <img
               className="logo-name-white"
@@ -54,11 +53,19 @@ const Navbar = ({ menuData }) => {
           </LinkS>
           {menuClicked ? (
             <button onClick={menuClose} className="menu-btn">
-              <HamburgerSvg menuClicked={menuClicked} menuClose={menuClose} />
+              <HamburgerSvg
+                menuClicked={menuClicked}
+                opacity={1}
+                color={"var(--accent-color)"}
+              />
             </button>
           ) : (
             <button onClick={menuOpen} className="menu-btn">
-              <HamburgerSvg />
+              <HamburgerSvg
+                menuClicked={menuClicked}
+                opacity={1}
+                color={"var(--accent-color)"}
+              />
             </button>
           )}
 

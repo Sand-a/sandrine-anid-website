@@ -27,7 +27,7 @@ const Contact = ({ sectionRevealVariants }) => {
     e.target.reset();
   };
   return (
-    <section id="contact" className=" section--4">
+    <section id="let-s-connect" className=" section--4">
       <motion.div
         variants={sectionRevealVariants}
         initial="hidden"
@@ -36,9 +36,7 @@ const Contact = ({ sectionRevealVariants }) => {
         className="section container section-contact"
       >
         <div className="contact-headline">
-          <h1 className="primary-headline contact-headline-1">
-            Let’s get in Touch
-          </h1>
+          <h1 className="primary-headline contact-headline-1">Let’s connect</h1>
           <h1 className="primary-headline contact-headline contact-headline-2">
             Drop me a Line !
           </h1>
@@ -46,7 +44,7 @@ const Contact = ({ sectionRevealVariants }) => {
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div className="form-group">
             <label for="name" className="bodytext">
-              Name *
+              Name <b className="red">*</b>
             </label>
             <input
               className="searchfield"
@@ -58,7 +56,7 @@ const Contact = ({ sectionRevealVariants }) => {
           </div>
           <div className="form-group">
             <label for="email" className="bodytext">
-              Email *
+              Email <b className="red">*</b>
             </label>
             <input
               className="searchfield"
@@ -80,7 +78,7 @@ const Contact = ({ sectionRevealVariants }) => {
               rows="5"
             ></textarea>
             <div className="form-group">
-              <button className="btn form-btn" type="submit">
+              <button className="btn btn-round form-btn" type="submit">
                 Send
               </button>
             </div>

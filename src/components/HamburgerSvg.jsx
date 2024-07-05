@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-const HamburgerSvg = (props) => (
+const HamburgerSvg = ({ menuClicked, color, opacity }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
@@ -8,18 +8,15 @@ const HamburgerSvg = (props) => (
       enableBackground: "new 0 0 90.2 110.7",
     }}
     viewBox="0 0 90.2 110.7"
-    {...props}
   >
-    <style>{".st1{fill:#fff}"}</style>
-
     <motion.path
-      animate={props.menuClicked && { opacity: 1 }}
+      animate={menuClicked && { opacity: 1 }}
       initial={{ opacity: 0 }}
       id="backline"
       d="m31.1 34 59.1 27.9-31.1 14.7L0 48.7z"
       style={{
-        opacity: 0.8,
-        fill: "var(--yellow)",
+        opacity: opacity,
+        fill: color,
         enableBackground: "new",
       }}
     />
@@ -28,7 +25,7 @@ const HamburgerSvg = (props) => (
       id="up-arrow"
       initial={{ y: 0 }}
       animate={
-        props.menuClicked
+        menuClicked
           ? { y: 43, transition: { duration: 0.3 } }
           : {
               y: [0, 10, 0],
@@ -53,7 +50,7 @@ const HamburgerSvg = (props) => (
       id="down-arrow"
       initial={{ y: 0 }}
       animate={
-        props.menuClicked
+        menuClicked
           ? { y: -43, transition: { duration: 0.3 } }
           : {
               y: [0, -10, 0],

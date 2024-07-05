@@ -1,46 +1,23 @@
 .contact-headline {
   display: flex;
   flex-direction: column;
-
   align-items: flex-start;
   margin-top: 1rem;
   margin-bottom: 5rem;
-  margin-left: 5rem;
+}
+.contact-headline-1 {
+  font-size: 10rem;
+  margin-bottom: 0;
+}
+.contact-headline-2 {
+  font-size: 4rem;
+  letter-spacing: -2px;
 }
 .contact-headline-1,
 .contact-headline-2 {
-  margin-bottom: -0.8rem;
-  font-size: 3.8rem;
-  letter-spacing: -2px;
-}
-.contact-headline-2 {
   margin-left: 3rem;
-  position: relative;
 }
 
-.contact-headline-1:after {
-  content: "";
-  background-image: url("/public/assets/icons/pt-suspension.svg");
-  background-repeat: no-repeat;
-  display: inline-block;
-  position: absolute;
-  transform: translate(0, -80%);
-  height: 1.8em;
-  width: 1.8em;
-}
-
-.contact-headline-2:before {
-  content: "";
-  background-image: url("/public/assets/icons/cloud-icon.svg");
-  background-repeat: no-repeat;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  transform: translate(-65%, 10%);
-  height: 1.8em;
-  width: 1.8em;
-  animation: skills-floating 5s ease-in 1s infinite;
-}
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -106,16 +83,8 @@ input[name="user_email"] {
   .searchfield {
     width: 100%;
   }
-  .contact-headline {
-    margin-left: 0;
-    align-items: center;
-  }
-
-  .contact-headline-2 {
-    margin-left: 2rem;
-  }
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 650px) {
   .form-group {
     padding: 0 1rem;
   }
@@ -126,17 +95,29 @@ input[name="user_email"] {
   .contact-headline {
     margin-bottom: 1rem;
   }
-  .contact-headline-1,
+  .contact-headline-1 {
+    font-size: 7rem;
+  }
   .contact-headline-2 {
-    font-size: 3rem;
+    font-size: 3.3rem;
   }
 }
 @media screen and (max-width: 400px) {
-  .contact-headline-1,
-  .contact-headline-2 {
-    font-size: 2.5rem;
-  }
   .form-group {
     padding: 0 0.5rem;
+  }
+  .contact-headline-1 {
+    font-size: 6.5rem;
+  }
+  .contact-headline-2 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .contact-headline-1 {
+    font-size: 6rem;
+  }
+  .contact-headline-2 {
+    font-size: 2.5rem;
   }
 }

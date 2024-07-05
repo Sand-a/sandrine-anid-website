@@ -4,7 +4,7 @@ import "./WhatIDo.css";
 
 import Card from "../Card/Card";
 
-const WhatIDo = ({ sectionRevealVariants, cardsData }) => {
+const WhatIDo = ({ sectionRevealVariants, cardsData, menuData }) => {
   return (
     <>
       <section id="what-i-do" className="section--1">
@@ -16,7 +16,9 @@ const WhatIDo = ({ sectionRevealVariants, cardsData }) => {
           className="section what-i-do-section"
         >
           <div className="headline-title">
-            <h1 className="primary-headline what-i-do-headline">What i do </h1>
+            <h1 className="primary-headline what-i-do-headline">
+              {menuData[1].name}
+            </h1>
           </div>
           <div className="container cards-container">
             {cardsData.map((card) => {

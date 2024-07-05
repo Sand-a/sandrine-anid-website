@@ -1,0 +1,104 @@
+.services-list {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.services-items {
+  position: relative;
+  padding: 2rem 3rem 2rem 3.5rem;
+  width: 100%;
+  border-radius: 4rem;
+
+  border: 3px solid var(--black);
+}
+
+.skill-title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 400;
+  padding-left: 1rem;
+}
+.service-line {
+  padding: 1rem 1rem 1rem 1rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.skills-row {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  position: relative;
+}
+.btn-skills {
+  padding: 0.3rem 1.55rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  font-size: 1.4rem;
+  border: 1px solid var(--accent-color);
+}
+.tags {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.tag {
+  height: 3rem;
+}
+
+.tag-end {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.skill-title {
+  color: var(--black);
+
+  transition: color 1s ease;
+}
+
+.skill-title.open {
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 650px) {
+  .services-list {
+    width: 90%;
+  }
+  .services-list {
+    gap: 2.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .services-items {
+    padding: 1.8rem 2rem 1.8rem 3rem;
+  }
+  .skill-title {
+    font-size: 2.2rem;
+    letter-spacing: -0.8px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .skill-title {
+    font-size: 1.8rem;
+    letter-spacing: -0.7px;
+    padding-left: 0.5rem;
+  }
+
+  .service-line {
+    padding: 0.5rem;
+
+    font-size: 1.6rem;
+  }
+  .btn-skills {
+    font-size: 1.2rem;
+  }
+}
