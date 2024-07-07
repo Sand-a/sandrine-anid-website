@@ -123,6 +123,7 @@
   .col--1 {
     grid-column: 1 / -1;
     grid-row: 1/2;
+    padding-right: 0;
     margin-bottom: -6rem;
   }
   .line-container {
@@ -134,10 +135,9 @@
     width: 70%;
   }
   .line-text-container {
-    background-color: #ffffff94;
-    border-radius: 0.5rem;
-    padding: 2rem 2rem 2rem 1rem;
-    margin-right: 2%;
+    background-color: #ffffff9b;
+    border-radius: 0.8rem;
+    padding: 2rem 2rem 4rem 1rem;
   }
   .image-container img {
     margin-left: -5.5rem;
@@ -146,6 +146,7 @@
 @media screen and (max-width: 450px) {
   .line-text-container {
     max-width: 100%;
+    border-radius: 0;
   }
 
   .col--1 svg {
@@ -167,14 +168,13 @@
   }
 
   .line-text {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
   }
   .line-text--1 {
     font-weight: 600;
   }
   .line-text--2 {
-    font-size: 1.6rem;
     font-weight: 300;
     margin-bottom: 2rem;
   }

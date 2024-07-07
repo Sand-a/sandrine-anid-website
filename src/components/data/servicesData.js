@@ -4,10 +4,10 @@ export const servicesData = [
     name: "Art Direction",
     line: "Creating a consistent visual strategy to align with your brand identity and enhance user experience.",
     skills: [
-      "Concept Strategy",
-      "Project Management",
-      "Visual Consistency",
       "Storytelling",
+      "Concept Strategy",
+      "Visual Consistency",
+      "Project Management",
     ],
   },
   {
@@ -17,8 +17,9 @@ export const servicesData = [
     skills: [
       "Logo Design",
       "Branding",
-      "Photo Editing",
+      "Identity",
       "Color schemes",
+      "Photo Editing",
       "SVG Icons ",
       "Illustrations",
     ],
@@ -34,10 +35,11 @@ export const servicesData = [
     name: "Web Developement",
     line: "Building and coding functional, responsive websites to ensure seamless performance and usability.",
     skills: [
+      "front End",
       "HTML 5",
       "CSS 3",
       "JavaScript",
-      "React.js",
+      "React js",
       "Clean Code",
       "Problem Solving",
     ],

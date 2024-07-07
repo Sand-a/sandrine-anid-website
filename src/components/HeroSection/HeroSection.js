@@ -126,7 +126,16 @@ const HeroSection = () => {
             </LinkS>
           </motion.div>
         </div>
-        <motion.div className="image-container col--2">
+        <motion.div
+          className="image-container col--2"
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+
+            transition: { duration: 2 },
+          }}
+          viewport={{ once: true }}
+        >
           <img src="/assets/sa-photo.png" alt="sa profile pic" />
         </motion.div>
       </section>
