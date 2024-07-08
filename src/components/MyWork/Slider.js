@@ -53,7 +53,7 @@ const Slider = ({ projectsData }) => {
               loop="true"
             >
               {projectsData.map((project) => (
-                <swiper-slide key={project.id} className="project-detail">
+                <swiper-slide key={project._id} className="project-detail">
                   <motion.div
                     initial="initial"
                     animate="initial"

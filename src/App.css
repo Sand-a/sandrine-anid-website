@@ -3,11 +3,7 @@
   --family-font: "Satoshi", sans-serif;
   --font-headline: "Antonio", sans-serif;
   --nav-links: #fff;
-  --nav-links-active: #ffe53b;
-  --nav-links-hover: #ffe53b54;
-
   --white: #fff;
-  --yellow: #ffe53b;
   --black: #1c1d1d;
   --black-opacity: rgba(0, 0, 0, 0.85);
   --accent-color: #f03f26;
@@ -50,7 +46,7 @@ ul {
   white-space: pre-line;
   margin-bottom: 15rem;
   text-transform: uppercase;
-  text-align: center;
+
   font-size: 7rem;
   line-height: 1.1;
   letter-spacing: -3px;

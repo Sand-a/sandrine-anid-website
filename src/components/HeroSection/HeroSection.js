@@ -5,30 +5,9 @@ import "./HeroSection.css";
 import { motion } from "framer-motion";
 
 import { Link as LinkS } from "react-scroll";
+import { containerVariants, childVariants } from "../data/animationsData";
 
 const HeroSection = () => {
-  const containerVariants = {
-    hidden: { opacity: 1 },
-    visible: (i = 1) => ({
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
-    }),
-  };
-
-  const childVariants = {
-    hidden: {
-      opacity: 0,
-      y: 200,
-      transition: { type: "spring", damping: 30, stiffness: 100 },
-    },
-    visible: {
-      opacity: 1,
-      y: -3,
-      transition: { type: "spring", damping: 30, stiffness: 100 },
-    },
-  };
   const isMobile = window.innerWidth <= 975;
   return (
     <>

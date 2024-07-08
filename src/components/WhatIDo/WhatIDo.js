@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./WhatIDo.css";
 
 import Card from "../Card/Card";
+import SectionHeadline from "../Utility/SectionHeadline";
 
 const WhatIDo = ({ sectionRevealVariants, cardsData, menuData }) => {
   return (
@@ -15,14 +16,11 @@ const WhatIDo = ({ sectionRevealVariants, cardsData, menuData }) => {
           viewport={{ once: true, amount: 0.1 }}
           className="section what-i-do-section"
         >
-          <div className="headline-title">
-            <h1 className="primary-headline what-i-do-headline">
-              {menuData[1].name}
-            </h1>
-          </div>
+          <SectionHeadline line1="what" line2="i do" position="center" />
+
           <div className="container cards-container">
             {cardsData.map((card) => {
-              return <Card card={card} />;
+              return <Card key={card.id} card={card} />;
             })}
           </div>
         </motion.div>

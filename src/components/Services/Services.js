@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./Services.css";
+import SectionHeadline from "../Utility/SectionHeadline";
 
 const Services = ({ sectionRevealVariants, servicesData, menuData }) => {
   const [openItems, setOpenItems] = useState({}); // Track the IDs of the currently open items
@@ -47,13 +48,7 @@ const Services = ({ sectionRevealVariants, servicesData, menuData }) => {
         viewport={{ once: true, amount: 0.1 }}
         className="section skills-section"
       >
-        <h1
-          className={`primary-headline skills-headline ${
-            Object.keys(openItems).length > 0 ? "selected" : ""
-          }`}
-        >
-          {menuData[2].name}
-        </h1>
+        <SectionHeadline line1="my" line2="services" position="center" />
 
         <ul className="services-list">
           {servicesData.map((service) => {

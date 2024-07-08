@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./Slider.css";
 import "../Card/Card.css";
 import Slider from "./Slider";
+import SectionHeadline from "../Utility/SectionHeadline";
 
 const MyWork = ({ sectionRevealVariants, projectsData }) => {
   return (
@@ -15,9 +16,8 @@ const MyWork = ({ sectionRevealVariants, projectsData }) => {
           viewport={{ once: true, amount: 0.1 }}
           className="section projects-section"
         >
-          <h1 className="primary-headline projects-headline">
-            {"Selected \n work"}
-          </h1>
+          <SectionHeadline line1="Selected" line2="work" position="center" />
+
           <Slider projectsData={projectsData} />
         </motion.div>
       </section>

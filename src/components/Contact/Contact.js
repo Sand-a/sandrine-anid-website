@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import "./Contact.css";
+import SectionHeadline from "../Utility/SectionHeadline";
 
 const Contact = ({ sectionRevealVariants }) => {
   const form = useRef();
@@ -35,15 +36,16 @@ const Contact = ({ sectionRevealVariants }) => {
         viewport={{ once: true, amount: 0.1 }}
         className="section container section-contact"
       >
-        <div className="contact-headline">
-          <h1 className="primary-headline contact-headline-1">Let’s connect</h1>
-          <h1 className="primary-headline contact-headline contact-headline-2">
-            Drop me a Line !
-          </h1>
-        </div>
+        <SectionHeadline
+          line1="Let’s connect"
+          addClass1="contact-headline-1"
+          line2=" Drop me a Line !"
+          addClass2="contact-headline-2"
+        />
+
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div className="form-group">
-            <label for="name" className="bodytext">
+            <label htmlFor="name" className="bodytext">
               Name <b className="red">*</b>
             </label>
             <input
@@ -55,7 +57,7 @@ const Contact = ({ sectionRevealVariants }) => {
             />
           </div>
           <div className="form-group">
-            <label for="email" className="bodytext">
+            <label htmlFor="email" className="bodytext">
               Email <b className="red">*</b>
             </label>
             <input
@@ -67,7 +69,7 @@ const Contact = ({ sectionRevealVariants }) => {
             />
           </div>
           <div className="form-group">
-            <label for="message" className="bodytext">
+            <label htmlFor="message" className="bodytext">
               Message
             </label>
             <textarea
