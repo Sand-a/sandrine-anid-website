@@ -5,7 +5,7 @@ import "./WhatIDo.css";
 import Card from "../Card/Card";
 import SectionHeadline from "../Utility/SectionHeadline";
 
-const WhatIDo = ({ sectionRevealVariants, cardsData, menuData }) => {
+const WhatIDo = ({ sectionRevealVariants, cardsData }) => {
   return (
     <>
       <section id="what-i-do" className="section--1">

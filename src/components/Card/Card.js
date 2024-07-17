@@ -12,7 +12,7 @@ const Card = ({ card }) => {
   };
 
   return (
-    <div id={card.id} className="card-container">
+    <motion.div id={card.id} className="card-container">
       <div className="card-title">
         <img src={card.icon} alt="" />
         <h1>{card.title}</h1>
@@ -67,7 +67,7 @@ const Card = ({ card }) => {
         <p className="bodytext">{card.text_skills}</p>
         <h3 className="card-skills">{card.skills}</h3>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

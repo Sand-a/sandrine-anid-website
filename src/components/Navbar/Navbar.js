@@ -7,6 +7,16 @@ import HamburgerSvg from "../HamburgerSvg";
 
 const Navbar = ({ menuData }) => {
   const [menuClicked, setMenuClicked] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+  const changeBackground = () => {
+    if (window.scrollY >= 180) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
+
   const containerVariants = {
     open: {
       opacity: 1,
@@ -40,17 +50,7 @@ const Navbar = ({ menuData }) => {
         viewport={{ once: true }}
         className="header"
       >
-        <div className="navbar container">
-          <LinkS to="hero" offset={-100} smooth={true} className="navbar-logos">
-            <div className="logo-icon">
-              <SLogoSvg color={"var(--accent-color)"} opacity={1} />
-            </div>
-            <img
-              className="logo-name-white"
-              src="/assets/logo/logo-white.svg"
-              alt="s-logo"
-            />
-          </LinkS>
+        <div className={navbar ? "navbar active" : "navbar"}>
           {menuClicked ? (
             <button onClick={menuClose} className="menu-btn">
               <HamburgerSvg
@@ -124,6 +124,16 @@ const Navbar = ({ menuData }) => {
               </ul>
             </motion.div>
           )}
+          <LinkS to="hero" offset={-100} smooth={true} className="navbar-logos">
+            <img
+              className="logo-name-white"
+              src="/assets/logo/logo-black.svg"
+              alt="s-logo"
+            />
+            <div className="logo-icon">
+              <SLogoSvg color={"var(--accent-color)"} opacity={1} />
+            </div>
+          </LinkS>
         </div>
       </motion.nav>
     </>

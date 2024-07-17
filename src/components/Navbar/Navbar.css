@@ -1,13 +1,11 @@
 .header {
-  position: sticky;
+  position: fixed;
   margin: 0;
 
   top: 0;
 
   width: 100vw;
 
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-  background-color: var(--black-opacity);
   z-index: 11;
 }
 
@@ -16,9 +14,14 @@
   justify-content: space-between;
   align-items: center;
   height: 10rem;
+
+  transition: all 1s;
   padding: 0 3rem;
 }
-
+.navbar.active {
+  background-color: var(--navbar);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
 .navbar-logos {
   display: flex;
   align-items: flex-end;
@@ -26,7 +29,7 @@
 .logo-icon {
   height: 3.5rem;
   width: 3.5rem;
-  margin-right: 2rem;
+  margin-left: 2rem;
 }
 .logo-name-white {
   height: 2.6rem;
@@ -43,7 +46,7 @@
   font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 0.063em;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -0.1px;
   text-decoration: none;
   color: var(--nav-links);
