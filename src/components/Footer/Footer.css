@@ -46,7 +46,7 @@
   align-items: center;
   gap: 0.8rem;
   background-color: var(--black);
-  border-top: 1.5rem solid var(--accent-color);
+  border-top: 1rem solid var(--accent-color);
   padding: 5rem 0 7rem 0;
 }
 .footer-signature p {

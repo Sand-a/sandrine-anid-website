@@ -23,10 +23,26 @@ const Footer = ({ menuData }) => {
                 <a
                   target="_blank"
                   rel="noreferrer"
+                  href="https://github.com/Sand-a/my-birthday-table"
+                  className="social-media-icon"
+                >
+                  <img
+                    style={{
+                      height: "3rem",
+                      width: "3rem",
+                      marginRight: "-.5rem",
+                    }}
+                    src="/assets/svg/github-icon.svg"
+                    alt="github"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://www.linkedin.com/in/sandrine-anid-7a51282a1"
                   className="social-media-icon"
                 >
-                  <img src="/assets/svg/linkedin-icon.svg" alt="" />
+                  <img src="/assets/svg/linkedin-icon.svg" alt="linkedin" />
                 </a>
                 <a
                   target="_blank"
@@ -34,7 +50,7 @@ const Footer = ({ menuData }) => {
                   href="https://www.instagram.com/myveryfirst_bc?igsh=aTZ4dHBzaDFzNzgx"
                   className="social-media-icon"
                 >
-                  <img src="/assets/svg/instagram-icon.svg" alt="" />
+                  <img src="/assets/svg/instagram-icon.svg" alt="insta" />
                 </a>
               </div>
             </div>
