@@ -36,7 +36,7 @@ export const projectsData = [
     _id: 14,
     project_name: "Kareen Abdelnour | art",
     favicon: "/assets/projects/ka-favicon.svg",
-    url: "https://kareenabdelnour.com/",
+    url: "https://kareenabdelnour.netlify.app",
     desktop: "/assets/projects/ka-website.jpg",
     phone: "/assets/projects/ka-website-ph.jpg",
     description: "UI/UX Design / Developement",
