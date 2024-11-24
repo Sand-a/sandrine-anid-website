@@ -51,7 +51,7 @@ const Contact = ({ sectionRevealVariants }) => {
             <input
               className="searchfield"
               type="text"
-              // placeholder="name"
+              placeholder="your name"
               name="user_name"
               required
             />
@@ -62,10 +62,10 @@ const Contact = ({ sectionRevealVariants }) => {
             </label>
             <input
               className="searchfield"
-              type="text"
-              // placeholder="Email"
+              type="email"
               name="user_email"
               required
+              placeholder="Email"
             />
           </div>
           <div className="form-group">
