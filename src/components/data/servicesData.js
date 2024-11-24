@@ -49,10 +49,10 @@ export const servicesData = [
       "HTML 5",
       "CSS 3",
       "SASS",
-      "Clean Code",
       "JavaScript",
       "React js",
       "Problem Solving",
+      "SEO",
     ],
   },
 ];
