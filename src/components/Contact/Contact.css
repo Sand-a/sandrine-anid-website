@@ -70,6 +70,34 @@ input[name="user_email"] {
   border-radius: 3pt;
   border: none;
 }
+.message-confirmation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.confirmation-modal {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5rem 10rem;
+  margin-top: 20%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.confirmation-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+  font-weight: 600;
+}
+
 @media screen and (max-width: 750px) {
   .form-group {
     width: 100%;
@@ -79,6 +107,13 @@ input[name="user_email"] {
   }
 }
 @media screen and (max-width: 650px) {
+  .message-confirmation {
+    padding: 0 6%;
+  }
+  .confirmation-modal {
+    width: 100%;
+    padding: 5rem;
+  }
   .form-group {
     padding: 0 1rem;
   }
@@ -103,6 +138,9 @@ input[name="user_email"] {
   }
   .contact-headline-2 {
     font-size: 2.8rem;
+  }
+  .confirmation-modal {
+    padding: 3rem;
   }
 }
 @media screen and (max-width: 330px) {

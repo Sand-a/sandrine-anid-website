@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import "./Contact.css";
@@ -6,6 +6,8 @@ import SectionHeadline from "../Utility/SectionHeadline";
 
 const Contact = ({ sectionRevealVariants }) => {
   const form = useRef();
+  const [showConfirmation, setShowConfirmation] = useState(false);
+  const [userName, setUserName] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,6 +22,7 @@ const Contact = ({ sectionRevealVariants }) => {
       .then(
         () => {
           console.log("SUCCESS!");
+          setShowConfirmation(true); // Show confirmation popup
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -27,9 +30,19 @@ const Contact = ({ sectionRevealVariants }) => {
       );
     e.target.reset();
   };
+  const handleModalClose = () => {
+    setShowConfirmation(false);
+  };
+  const handleNameChange = (e) => {
+    setUserName(e.target.value); // Update the userName state as the user types
+  };
+  const capitalizeFirstWord = (name) => {
+    const firstWord = name.trim().split(" ")[0]; // Get the first word
+    return firstWord.charAt(0).toUpperCase() + firstWord.slice(1); // Capitalize the first letter
+  };
 
   return (
-    <section id="let-s-connect" className=" section--4">
+    <section id="let-s-connect" className="section--4">
       <motion.div
         variants={sectionRevealVariants}
         initial="hidden"
@@ -55,6 +68,7 @@ const Contact = ({ sectionRevealVariants }) => {
               placeholder="your name"
               name="user_name"
               required
+              onChange={handleNameChange} // Capture name input changes
             />
           </div>
           <div className="form-group">
@@ -88,7 +102,22 @@ const Contact = ({ sectionRevealVariants }) => {
           </div>
         </form>
       </motion.div>
-      <div className="meassage-confirmation"></div>
+
+      {/* Confirmation Modal */}
+      {showConfirmation && (
+        <div className="message-confirmation" onClick={handleModalClose}>
+          <div
+            className="confirmation-modal"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <p className="confirmation-title">Your Message has been Sent!</p>
+            <p className="bodytext">
+              Thank you <i>{capitalizeFirstWord(userName)}</i> for reaching out.{" "}
+            </p>
+            <p className="bodytext">I’ll be in touch with you shortly...</p>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
