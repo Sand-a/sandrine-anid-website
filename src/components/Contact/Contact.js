@@ -27,6 +27,7 @@ const Contact = ({ sectionRevealVariants }) => {
       );
     e.target.reset();
   };
+
   return (
     <section id="let-s-connect" className=" section--4">
       <motion.div
