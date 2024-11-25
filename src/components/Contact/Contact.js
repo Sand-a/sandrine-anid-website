@@ -112,9 +112,9 @@ const Contact = ({ sectionRevealVariants }) => {
           >
             <p className="confirmation-title">Your Message has been Sent!</p>
             <p className="bodytext">
-              Thank you <i>{capitalizeFirstWord(userName)}</i> for reaching out.{" "}
+              Thank you <i>{capitalizeFirstWord(userName)}</i> for reaching out.
+              I’ll be in touch with you shortly...
             </p>
-            <p className="bodytext">I’ll be in touch with you shortly...</p>
           </div>
         </div>
       )}
