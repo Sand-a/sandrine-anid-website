@@ -100,6 +100,24 @@ const Navbar = ({ menuData }) => {
                   );
                 })}
               </motion.ul>
+              <div className="social-media-nav-links">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/Sand-a/my-birthday-table"
+                  className="social-media-nav-icon"
+                >
+                  <img src="/assets/svg/github-icon.svg" alt="github" />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/sandrine-anid-7a51282a1"
+                  className="social-media-nav-icon"
+                >
+                  <img src="/assets/svg/linkedin-icon.svg" alt="linkedin" />
+                </a>
+              </div>
             </div>
           ) : (
             <motion.div className="nav-menu">

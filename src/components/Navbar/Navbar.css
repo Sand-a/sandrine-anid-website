@@ -74,6 +74,21 @@
   border: none;
   background-color: transparent;
 }
+.social-media-nav-links {
+  display: none;
+  align-items: end;
+  margin-left: 3rem;
+  gap: 1rem;
+}
+.social-media-nav-icon:nth-child(1) img {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+.social-media-nav-icon:nth-child(2) img {
+  margin-bottom: 0.2rem;
+  width: 3rem;
+  height: 3rem;
+}
 
 /* mobile menu navbar */
 
@@ -91,7 +106,9 @@
   .navbar {
     padding: 0 4rem;
   }
-
+  .social-media-nav-links {
+    display: flex;
+  }
   .nav-menu {
     position: fixed;
     display: none;

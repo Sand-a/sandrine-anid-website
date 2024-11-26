@@ -103,7 +103,7 @@ const Contact = ({ sectionRevealVariants }) => {
         </form>
       </motion.div>
 
-      {/* Confirmation Modal */}
+      {/* Confirmation Modal  */}
       {showConfirmation && (
         <div className="message-confirmation" onClick={handleModalClose}>
           <div
