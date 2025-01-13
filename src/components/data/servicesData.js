@@ -34,8 +34,10 @@ export const servicesData = [
     skills: [
       "UI/UX",
       "design process",
+      "case study",
       "User-reseach",
       "User-needs",
+      "wireframe",
       "Prototype",
       "User-testing",
     ],
