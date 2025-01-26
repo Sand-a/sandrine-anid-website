@@ -22,7 +22,8 @@ export const servicesData = [
       "Crafting visually compelling graphics and imagery to effectively communicate your brand's message.",
     skills: [
       "Logo Design",
-      "Brand Identity",
+      "Brand",
+      "Identity",
       "Color schemes",
       "typography",
       "Photo Editing",
@@ -33,7 +34,7 @@ export const servicesData = [
   {
     _id: 123,
     name: "Design",
-    line: "Design is not just about aesthetics; it’s about functionality, user-centered, with one purpose: solving a problem. Minimalism is the core of elegance and modernism, creating Timeless Designs.",
+    line: "Design is not just about aesthetics; it’s about functionality, user-centered, with one purpose: solving a problem. Minimalism is the core of elegance, modernism, and Timeless Design.",
     line1:
       "My mission is to turn your visitors into loyal customers.Designing visually appealing and user-friendly interfaces, to deliver an exceptional and memorable user experience.",
     skills: [
@@ -50,9 +51,8 @@ export const servicesData = [
   {
     _id: 124,
     name: "Development",
-    line: "Building and coding functional, responsive websites to ensure seamless performance and usability, running smoothly with one objective: to deliver outstanding results and  best user experience.",
-    line1:
-      "Building and coding functional, responsive websites to ensure seamless performance and usability.",
+
+    line: "Building and coding functional, responsive websites to ensure seamless performance and  usability, for optimal user experiences.",
     skills: [
       "front End",
       "HTML 5",
