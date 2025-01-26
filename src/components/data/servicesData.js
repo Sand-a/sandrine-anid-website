@@ -36,7 +36,7 @@ export const servicesData = [
     name: "Design",
     line: "Design is not just about aesthetics; it’s about functionality, user-centered, with one purpose: solving a problem. Minimalism is the core of elegance, modernism, and Timeless Design.",
     line1:
-      "My mission is to turn your visitors into loyal customers.Designing visually appealing and user-friendly interfaces, to deliver an exceptional and memorable user experience.",
+      "Designing visually appealing and user-friendly interfaces, to deliver an exceptional and memorable user experience.",
     skills: [
       "UI/UX",
       "design process",
