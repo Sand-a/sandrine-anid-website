@@ -28,6 +28,7 @@ const HeroSection = () => {
             }}
           >
             <motion.p variants={childVariants} className="top-line">
+              {/* creative web */}
               creative web
             </motion.p>
           </motion.div>
@@ -58,7 +59,8 @@ const HeroSection = () => {
             I'm a UI/UX Designer & Frontend Developer based in London.
           </p>
           <p className="line-text line-text--2">
-            – I will turn your ideas into reality!
+            {/* – I will turn your ideas into reality! */}– I will help you
+            achieve your Dreams!
           </p>
         </motion.div>
       </section>
