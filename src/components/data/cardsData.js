@@ -6,10 +6,10 @@ export const cardsData = [
     slogan: "Make an Impact.",
     slogan1: "Your Image is Everything.",
     text: "From the first impression when visiting your website to how users navigate through it, I create meaningful digital experiences tailored to your users' needs, all while meeting your objectives and goals.",
-    text_readMore:
-      "\nI take a strategic approach, starting with a deep understanding of your users by defining their needs, pain points and challenges. I then explore and ideate design solutions, creating wireframes and interactive prototypes. My focus is on crafting intuitive, visually appealing user interfaces, following design principles, best practices, and accessibility standards. I conduct usability testing before implementation to ensure your users enjoy a seamless journey and an exceptional digital experience.",
     text_readMore1:
-      "I start with an appealing User Interface, crafting a distinctive identity and using attractive visuals to showcase your services. This includes art direction, logo design, color schemes, photo refinement, custom icons and illustrations, along with creating unique SVG animations that set your site apart from others. Lastly, I ensure that your users enjoy a seamless journey by designing prototypes and conducting tests to provide the best possible User Experience.",
+      "\nI take a strategic approach, starting with a deep understanding of your users by defining their needs, pain points and challenges. I then explore and ideate design solutions, creating wireframes and interactive prototypes. My focus is on crafting intuitive, visually appealing user interfaces, following design principles, best practices, and accessibility standards. I conduct usability testing before implementation to ensure your users enjoy a seamless journey and an exceptional digital experience.",
+    text_readMore:
+      "\nI start with an appealing User Interface, crafting a distinctive identity and using attractive visuals to showcase your services. This includes art direction, logo design, color schemes, photo refinement, custom icons and illustrations, along with creating unique SVG animations that set your site apart from others. Lastly, I ensure that your users enjoy a seamless journey by designing prototypes and conducting tests to provide the best possible User Experience.",
     text_skills: "I bring ideas to life by using:",
     skills: "Figma, Illustrator & Photoshop.",
   },

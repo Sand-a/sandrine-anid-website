@@ -7,6 +7,11 @@ export const projectsData = [
     desktop: "/assets/projects/aa-website.jpg",
     phone: "/assets/projects/aa-website-ph.jpg",
     description: "Branding / UI/UX Design / Development",
+    overview: "",
+    objective: "",
+    place_date: "",
+    solution: "",
+    improvement: "",
     design_skills: "Art direction / Logo design / Image refinement.",
     coding_tools: "HTML, CSS & React JS",
   },
@@ -17,7 +22,15 @@ export const projectsData = [
     url: "https://chirinesayegh.com/",
     desktop: "/assets/projects/cs-website.jpg",
     phone: "/assets/projects/cs-website-ph.jpg",
-    description: "Branding / UI/UX Design / Development",
+    description: "Branding / Design / Development",
+    overview:
+      "Chirine Sayegh is a French-Lebanese architect and self-taught artist whose work seamlessly blends architecture, art, and furniture design. Chirine emphasizes respect for clients, the environment, and sustainable materials. Her philosophy prioritizes contextual integration and innovation, resulting in designs that harmonize comfort, functionality, and creativity. ",
+    objective:
+      "Her objective is to highlight her pivotal role, showcase her work and portfolio, and engage people to learn more about her and get in touch.",
+    place_date: "Lebanon, 2022",
+    solution:
+      'I chose a sidebar navigation bar, as architecture websites are typically viewed on desktop screens. The homepage highlights her three main areas of expertise: architecture, furniture design, and art, presented in a minimalist design to reflect the elegance and modern spirit of architectural design. Each section functions as its own distinct page, giving the impression of three portfolio in one cohesive platform.\nEvery project is showcased in a "less is more" style, emphasizing simplicity and clarity. Images were gathered from her phone library and her old MacBook, then refined to create high-quality visual content for her portfolio. Art pieces were rendered within frames to enhance their presentation and provide a professional touch.\nThe biggest challenge of this project was sourcing visual content, as the artist had not consistently archived her work throughout her career. To establish credibility and trust, I included an exhibitions and press page, along with a contact form section.\nAdditionally, branding and stationery were customized to complement the overall design and enhance the professional appearance.',
+    improvement: "We can add a CTA Button",
     design_skills: "Art Direction / Logo design / Image refinement.",
     coding_tools: "HTML, CSS & React JS",
   },
@@ -29,6 +42,11 @@ export const projectsData = [
     desktop: "/assets/projects/mybdaytable-app.jpg",
     phone: "/assets/projects/mybdaytable-app-ph.jpg",
     description: "Branding / UI/UX Design / Development",
+    overview: "",
+    objective: "",
+    place_date: "",
+    solution: "",
+    improvement: "",
     design_skills: "Art direction / Logo design",
     coding_tools: "HTML, CSS & React JS",
   },
@@ -39,8 +57,17 @@ export const projectsData = [
     url: "https://kareenabdelnour.com/",
     desktop: "/assets/projects/ka-website.jpg",
     phone: "/assets/projects/ka-website-ph.jpg",
-    description: "Branding / UI/UX Design / Development",
-    design_skills: "Art direction / Logo design / Image refinement.",
+    description: "Branding / Design / Development",
+    overview:
+      "Kareen Abdelnour is a Franco-Lebanese artist whose work embodies a universe of femininity, filled with curves and sensuality, brought to life through bold and vibrant acrylic colors. Her art is always accompanied by a touch of humor and absurdity, offering a surrealistic perspective on the world. She expresses femininity through diverse figures, from traditional to modern women, in both intimate and social scenes.",
+    objective:
+      "Her objective is to showcase her art, express her identity, inspire others, and leave a meaningful impact on the world.",
+    place_date: "Paris, 2022",
+    solution:
+      'I have designed a vibrant, colorful, and playful single-page website featuring an engaging gallery of mosaic images. Each painting is displayed "in situation" through photo editing and refinement, allowing viewers to better visualize its dimensions and style in real-world spaces. This helps them gain a clearer understanding of the artwork. Users can easily message the artist for inquiries, and a smooth scroll navigation bar enhances the browsing experience. Additionally, exhibitions and media features are prominently highlighted to build trust and credibility.',
+    improvement:
+      "Having a feature that enables you to visualize the painting on your wall at home using AI-powered AR app technology.",
+    design_tools: "Photoshop / Illustrator.",
     coding_tools: "HTML, CSS & JavaScript",
   },
 ];
