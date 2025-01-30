@@ -8,21 +8,10 @@ import { containerVariants, childVariants } from "../data/animationsData";
 
 const HeroSection = () => {
   return (
-    <>
-      <CenterImage />
-    </>
-  );
-};
-const CenterImage = () => {
-  const { scrollY } = useScroll();
-  const opacity = useTransform(scrollY, [0, 1300], [1, 0]);
-
-  return (
     <motion.section
       id="hero"
       className="hero--section"
       style={{
-        opacity,
         width: "100%",
       }}
     >
@@ -83,4 +72,5 @@ const CenterImage = () => {
     </motion.section>
   );
 };
+
 export default HeroSection;
