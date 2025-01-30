@@ -2,9 +2,9 @@ export const servicesData = [
   {
     _id: 121,
     name: "Art Direction",
-    line: "Bespoke design and a consistent visual strategy that align with your brand identity and enhance the user experience.",
     line1:
-      "Creating a consistent visual strategy that align with your brand identity and enhance user experience.",
+      "Bespoke design and a consistent visual strategy that align with your brand identity and enhance the user experience.",
+    line: "Creating a consistent visual strategy that align with your brand identity and enhance user experience.",
     skills: [
       "Design principles",
       "Strategy",
