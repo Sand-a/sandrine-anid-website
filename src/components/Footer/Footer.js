@@ -68,19 +68,6 @@ const Footer = ({ menuData }) => {
                   sandrine.anid@gmail.com
                 </a>
               </div>
-              <div className="contact-link">
-                <svg
-                  width="27"
-                  height="26"
-                  viewBox="0 0 27 26"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M26.3 14.8H17L21.7 22.9L17.9 25.1L13.2 17L8.5 25.1L4.7 22.9L9.4 14.8H0V10.3H9.3L4.6 2.2L8.5 0L13.2 8.1L17.9 0L21.7 2.2L17 10.3H26.3V14.8Z" />
-                </svg>
-                <a href="tel:+447747483520" className="bodytext">
-                  0044 77 4748 3520
-                </a>
-              </div>
             </div>
           </div>
 

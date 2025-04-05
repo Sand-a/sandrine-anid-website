@@ -58,6 +58,11 @@ const Contact = ({ sectionRevealVariants }) => {
         />
 
         <form ref={form} onSubmit={sendEmail} className="contact-form">
+          <p className="bodytext">
+            – This is the first step toward something exceptional. <br></br>
+            Let’s explore your vision, align your goals, and bring your project
+            to life together!
+          </p>
           <div className="form-group">
             <label htmlFor="name" className="bodytext">
               Name <b className="red">*</b>
