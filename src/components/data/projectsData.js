@@ -1,5 +1,21 @@
 export const projectsData = [
   {
+    _id: 10,
+    project_name: "NOMADIK | Home Accessories",
+    favicon: "",
+    url: "https://www.nomadik.me/",
+    desktop: "/assets/projects/nomadik-website.jpg",
+    phone: "/assets/projects/nomadik-website-ph.jpg",
+    description: "Branding / Web Design / Development",
+    overview: "",
+    objective: "",
+    place_date: "",
+    solution: "",
+    improvement: "",
+    design_skills: "Art direction / Logo design / Image refinement.",
+    coding_tools: "Wix Studio",
+  },
+  {
     _id: 11,
     project_name: "ALUCOBOND® Lebanon",
     favicon: "/assets/projects/aa-favicon.svg",
@@ -15,6 +31,7 @@ export const projectsData = [
     design_skills: "Art direction / Logo design / Image refinement.",
     coding_tools: "HTML, CSS & React JS",
   },
+
   {
     _id: 12,
     project_name: "CHIRINE SAYEGH | Architect",
