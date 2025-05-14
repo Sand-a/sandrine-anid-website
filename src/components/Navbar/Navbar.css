@@ -154,10 +154,6 @@
   }
 }
 @media screen and (max-width: 570px) {
-  .menu-btn {
-    width: 4rem;
-  }
-
   .navbar {
     padding: 0 2.5rem;
   }
