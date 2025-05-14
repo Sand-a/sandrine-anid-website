@@ -1,3 +1,8 @@
+footer {
+  padding: 10rem 2rem 0;
+
+  background-color: black;
+}
 .footer-text-warp {
   padding: 0 3rem;
 }
@@ -45,16 +50,20 @@
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
-  background-color: var(--black);
-  border-top: 0.6rem solid var(--accent-color);
+  border-top: 0.5px solid var(--s-light-line);
+
   padding: 5rem 0 7rem 0;
 }
 .footer-signature p {
   font-weight: 100;
+  color: var(--white-icon);
 }
 .sand-signature {
   font-size: 1.8rem;
   font-weight: 100;
+}
+.sand-signature b {
+  font-weight: 600;
 }
 .contact-link {
   display: flex;
@@ -64,18 +73,20 @@
 }
 .contact-link svg {
   height: 1.6rem;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   transition: all 0.5s ease-in-out;
+  fill: var(--s-light-line);
 }
 .contact-link a {
-  border-bottom: 3px solid transparent;
+  border-bottom: 1px solid transparent;
   transition: all 0.5s ease-in-out;
+  color: var(--white-icon);
 }
 .contact-link:hover svg {
-  fill: var(--accent-color);
+  fill: white;
 }
 .contact-link:hover a {
-  border-bottom: 3px solid var(--black);
+  border-bottom: 1px solid var(--s-light-line);
 }
 
 @media screen and (max-width: 570px) {

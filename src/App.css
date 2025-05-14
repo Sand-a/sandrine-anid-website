@@ -12,7 +12,8 @@
 
   --accent-color: #f03f26;
   --accent-color-dark: #bc1600;
-  --accent-color-hover: rgba(240, 61, 38, 0.25);
+  --accent-color-hover: rgba(0, 0, 0, 0.04);
+  --accent-color-active: black;
 
   --text-color: #121212;
   --text--bg: rgba(0, 0, 0, 0.65);
@@ -20,6 +21,8 @@
   --light-grey: #efefef;
   --darker-grey: #c6c6c6;
   --border-grey: #c6c6c6;
+  --s-light-line: #848484;
+  --white-icon: #c6c6c6;
 
   /* --light-bg: #e9e9e8;
   --image-darker: rgba(0, 0, 0, 0.5); */
