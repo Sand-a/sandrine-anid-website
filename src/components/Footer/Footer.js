@@ -31,7 +31,7 @@ const Footer = ({ menuData }) => {
                     width: "2.8rem",
                     marginRight: "-0.2rem",
                   }}
-                  src="/assets/svg/github-icon-white.svg"
+                  src="/assets/svg/github-icon-white-2.svg"
                   alt="GitHub"
                 />
               </a>
