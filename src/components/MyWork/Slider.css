@@ -90,6 +90,7 @@ figcaption {
 .project-context {
   margin-bottom: 2rem;
   font-size: 1.8rem;
+  text-align: center;
 }
 .project-tools {
   background-color: var(--black);
@@ -184,6 +185,7 @@ swiper-container::part(pagination) {
     left: 43%;
   }
 }
+
 @media screen and (max-width: 453px) {
   figcaption {
     height: 20rem;
@@ -199,5 +201,13 @@ swiper-container::part(pagination) {
   }
   swiper-container::part(pagination) {
     left: 44%;
+  }
+  .project-views {
+    margin-bottom: 15rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .swiper-slide-active .project-text {
+    transform: translate3d(0, 8%, 0);
   }
 }

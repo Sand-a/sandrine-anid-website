@@ -8,7 +8,7 @@ export const projectsData = [
     phone: "/assets/projects/nomadik-website-ph.jpg",
     description: "Branding / Web Design / Development",
     tools: "Wix Studio",
-    context: "e-commerce – CMS – Store Managment",
+    context: "e-commerce : CMS | Store Managment",
     objective: "",
     place_date: "",
     solution: "",
@@ -44,7 +44,7 @@ export const projectsData = [
     phone: "/assets/projects/cs-website-ph.jpg",
     description: "Branding / Design / Development",
     tools: "React JS",
-    context: "e-commerce : CMS | Store Managment",
+    context: "",
     overview:
       "Chirine Sayegh is a French-Lebanese architect and self-taught artist whose work seamlessly blends architecture, art, and furniture design. Chirine emphasizes respect for clients, the environment, and sustainable materials. Her philosophy prioritizes contextual integration and innovation, resulting in designs that harmonize comfort, functionality, and creativity. ",
     objective:
