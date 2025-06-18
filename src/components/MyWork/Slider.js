@@ -30,7 +30,7 @@ const Slider = ({ projectsData }) => {
   const isMobile = window.innerWidth <= 650;
   return (
     <section id="slider">
-      <div className="container slider-container">
+      <div className=" slider-container">
         <div className="swiper" id="swiper-1">
           <div className="swipper-wapper">
             <swiper-container
@@ -77,6 +77,10 @@ const Slider = ({ projectsData }) => {
                       </h1>
                       <p className="bodytext project-description">
                         {project.description}
+                      </p>
+                      <p className="bodytext project-tools">{project.tools}</p>
+                      <p className="bodytext project-context">
+                        {project.context}
                       </p>
                       <a
                         target="_blank"

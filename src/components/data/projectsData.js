@@ -7,7 +7,8 @@ export const projectsData = [
     desktop: "/assets/projects/nomadik-website.jpg",
     phone: "/assets/projects/nomadik-website-ph.jpg",
     description: "Branding / Web Design / Development",
-    overview: "",
+    tools: "Wix Studio",
+    context: "e-commerce – CMS – Store Managment",
     objective: "",
     place_date: "",
     solution: "",
@@ -23,6 +24,8 @@ export const projectsData = [
     desktop: "/assets/projects/aa-website.jpg",
     phone: "/assets/projects/aa-website-ph.jpg",
     description: "Branding / UI/UX Design / Development",
+    tools: "React JS",
+    context: "",
     overview: "",
     objective: "",
     place_date: "",
@@ -40,6 +43,8 @@ export const projectsData = [
     desktop: "/assets/projects/cs-website.jpg",
     phone: "/assets/projects/cs-website-ph.jpg",
     description: "Branding / Design / Development",
+    tools: "React JS",
+    context: "e-commerce : CMS | Store Managment",
     overview:
       "Chirine Sayegh is a French-Lebanese architect and self-taught artist whose work seamlessly blends architecture, art, and furniture design. Chirine emphasizes respect for clients, the environment, and sustainable materials. Her philosophy prioritizes contextual integration and innovation, resulting in designs that harmonize comfort, functionality, and creativity. ",
     objective:
@@ -59,7 +64,8 @@ export const projectsData = [
     desktop: "/assets/projects/mybdaytable-app.jpg",
     phone: "/assets/projects/mybdaytable-app-ph.jpg",
     description: "Branding / UI/UX Design / Development",
-    overview: "",
+    tools: "React JS",
+    context: "Application",
     objective: "",
     place_date: "",
     solution: "",
@@ -75,6 +81,8 @@ export const projectsData = [
     desktop: "/assets/projects/ka-website.jpg",
     phone: "/assets/projects/ka-website-ph.jpg",
     description: "Branding / Design / Development",
+    tools: "JavaScript",
+    context: "",
     overview:
       "Kareen Abdelnour is a Franco-Lebanese artist whose work embodies a universe of femininity, filled with curves and sensuality, brought to life through bold and vibrant acrylic colors. Her art is always accompanied by a touch of humor and absurdity, offering a surrealistic perspective on the world. She expresses femininity through diverse figures, from traditional to modern women, in both intimate and social scenes.",
     objective:
