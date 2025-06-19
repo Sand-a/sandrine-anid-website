@@ -78,7 +78,7 @@ const Slider = ({ projectsData }) => {
                       <p className="bodytext project-description">
                         {project.description}
                       </p>
-                      <p className="bodytext project-tools">{project.tools}</p>
+
                       <p className="bodytext project-context">
                         {project.context}
                       </p>
