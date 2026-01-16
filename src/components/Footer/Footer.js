@@ -22,7 +22,7 @@ const Footer = ({ menuData }) => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://github.com/Sand-a/my-birthday-table"
+                href="https://github.com/Sand-a"
                 className="social-media-icon"
               >
                 <img

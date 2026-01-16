@@ -104,7 +104,7 @@ const Navbar = ({ menuData }) => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/Sand-a/my-birthday-table"
+                  href="https://github.com/Sand-a"
                   className="social-media-nav-icon"
                 >
                   <img src="/assets/svg/github-icon.svg" alt="github" />
