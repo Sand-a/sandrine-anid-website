@@ -47,7 +47,7 @@ export const projectsData = [
     place_date: "",
     solution: "",
     improvement: "",
-    design_skills: "Art direction / Logo design / Image refinement.",
+    design_skills: "Creative Direction / Logo design / Image refinement.",
     coding_tools: "HTML, CSS & React JS",
   },
 
@@ -69,7 +69,7 @@ export const projectsData = [
     solution:
       'I chose a sidebar navigation bar, as architecture websites are typically viewed on desktop screens. The homepage highlights her three main areas of expertise: architecture, furniture design, and art, presented in a minimalist design to reflect the elegance and modern spirit of architectural design. Each section functions as its own distinct page, giving the impression of three portfolio in one cohesive platform.\nEvery project is showcased in a "less is more" style, emphasizing simplicity and clarity. Images were gathered from her phone library and her old MacBook, then refined to create high-quality visual content for her portfolio. Art pieces were rendered within frames to enhance their presentation and provide a professional touch.\nThe biggest challenge of this project was sourcing visual content, as the artist had not consistently archived her work throughout her career. To establish credibility and trust, I included an exhibitions and press page, along with a contact form section.\nAdditionally, branding and stationery were customized to complement the overall design and enhance the professional appearance.',
     improvement: "We can add a CTA Button",
-    design_skills: "Art Direction / Logo design / Image refinement.",
+    design_skills: "Creative Direction / Brand Identity / Image refinement.",
     coding_tools: "HTML, CSS & React JS",
   },
   {
