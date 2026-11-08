@@ -2,7 +2,7 @@ import React from "react";
 
 import "./HeroSection.css";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion} from "framer-motion";
 
 import { containerVariants, childVariants } from "../data/animationsData";
 

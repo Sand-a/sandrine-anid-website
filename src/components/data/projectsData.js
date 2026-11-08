@@ -36,7 +36,7 @@ export const projectsData = [
     _id: 11,
     project_name: "ALUCOBOND® Lebanon",
     favicon: "/assets/projects/aa-favicon.svg",
-    url: "https://anidconstruction.com/",
+    url: "https://www.anidconstruction.com/",
     desktop: "/assets/projects/aa-website.jpg",
     phone: "/assets/projects/aa-website-ph.jpg",
     description: "Branding / UI/UX Design / Development",
