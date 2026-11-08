@@ -127,6 +127,9 @@ footer {
   .sand-signature {
     font-size: 1.6rem;
   }
+   .footer-links a {
+    gap: 2rem;
+  }
 }
 @media screen and (max-width: 375px) {
   .footer-links svg {
@@ -135,9 +138,7 @@ footer {
   .footer-text-warp {
     padding: 0 2rem;
   }
-  .footer-links a {
-    gap: 2rem;
-  }
+
   .footer-links a img {
     height: 2.5rem;
   }
