@@ -39,22 +39,36 @@ const Footer = ({ menuData }) => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://www.linkedin.com/in/sandrine-anid-7a51282a1"
-                className="social-media-icon"
-              >
-                <img src="/assets/svg/linkedin-icon-white.svg" alt="LinkedIn" />
-              </a>
-
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.instagram.com/myveryfirst_bc?igsh=aTZ4dHBzaDFzNzgx"
+                href="https://www.instagram.com/myveryfirst_bc"
                 className="social-media-icon"
               >
                 <img
                   src="/assets/svg/instagram-icon-white.svg"
                   alt="Instagram"
                 />
+                <span className="social-tooltip">myveryfirst_bc</span>
+              </a>
+
+               <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/sandrine-anid"
+                className="social-media-icon"
+              >
+                <img src="/assets/svg/linkedin-icon-white.svg" alt="LinkedIn" />
+              </a>
+
+               <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/bcom__studio"
+                className="social-media-icon"
+              >
+                <img
+                  src="/assets/svg/instagram-icon-green.svg"
+                  alt="Instagram"
+                />
+                <span className="social-tooltip" style={{ color: "#d3ff56", fontStyle: "italic" }}>bcom__studio</span>
               </a>
             </div>
           </div>
